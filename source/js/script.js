@@ -1,15 +1,19 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
 
-pageHeader.classList.remove('page-header--nojs');
+var noJsElement = document.querySelector('.no-js');
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
-  }
-});
+if (noJsElement) {
+  noJsElement.classList.remove('no-js');
+}
+
+var siteHeaderElement = document.querySelector('.site-header');
+var menuButtonElement = document.querySelector('.menu-button');
+var menuLayoutElement = document.querySelector('.site-header__inner-layout');
+
+if (menuButtonElement && siteHeaderElement && menuLayoutElement) {
+  menuButtonElement.addEventListener('click', function () {
+    siteHeaderElement.classList.toggle('site-header--open');
+    menuButtonElement.classList.toggle('menu-button--open');
+    menuLayoutElement.classList.toggle('site-header__inner-layout--open');
+  });
+}

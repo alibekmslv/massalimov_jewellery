@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+}
+
+.logo__image {
+  fill: $logo__image-fill;
+
+  @media (max-width: $tablet) {
+    width: 52px;
+    height: 52px;
+  }
+}

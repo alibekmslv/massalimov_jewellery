@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,86 @@
   <title>Jewellery</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-  <h1>Hello World</h1>
+
+<body class="page-body no-js">
+  <!-- site-header--open -->
+  <header class="site-header">
+    <div class="site-header__wrapper container">
+      <!-- menu-button--open -->
+      <button class="menu-button site-header__menu-button" type="button">
+        <span class="visually-hidden">Open Menu</span>
+        <svg class="menu-button__icon" width="25" height="16" aria-hidden="true">
+          <use class="menu-button__icon-menu" xlink:href="img/sprite_auto.svg#icon-mobile-menu"></use>
+        </svg>
+      </button>
+      <!-- site-header__inner-layout--open -->
+      <div class="site-header__inner-layout">
+        <form class="search-field site-header__search-field" action="#" method="GET">
+          <label for="search" class="visually-hidden">Search</label>
+          <input class="search-field__input" id="search" type="search" placeholder="Type here to search" name="search" />
+          <svg class="search-field__icon" width="14" height="14" aria-hidden="true">
+            <use class="search-field__icon-use" xlink:href="img/sprite_auto.svg#icon-magnifying-glass"></use>
+          </svg>
+        </form>
+        <a class="logo site-header__logo" href="index.html">
+          <svg class="logo__image" width="66" height="66" >
+            <use class="logo__image-use" xlink:href="img/logo.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="site-navigation site-header__site-navigation">
+          <ul class="site-navigation__list">
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">What's new</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">Chockers</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">Necklaces</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">Rings</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">Earrings</a>
+            </li>
+          </ul>
+          <ul class="site-navigation__list site-navigation__list--secondary-menu">
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">About CH</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">Stores & Hours</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <a class="site-navigation__button" href="#">Login</a>
+        </nav>
+        <ul class="header-functional-links site-header__header-functional-links">
+          <li class="header-functional-links__item site-header__functional-link-login">
+            <a class="header-functional-links__button" href="#">Login</a>
+          </li>
+          <li class="header-functional-links__item">
+            <a class="header-functional-links__button" href="#">
+              <svg class="header-functional-links__icon" width="20" height="18" aria-hidden="true">
+                <use xlink:href="img/sprite_auto.svg#icon-shopping-bag"></use>
+              </svg>
+              <span class="show-on-desktop">Cart </span>
+              <span class="header-functional-links__cart-count show-on-desktop">0</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="site-main">
+
+  </main>
+  <footer class="site-footer">
+
+  </footer>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

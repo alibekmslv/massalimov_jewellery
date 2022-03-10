@@ -1,0 +1,136 @@
+.site-header {
+  position: relative;
+}
+
+.site-header--open {
+  @media (max-width: $desktop) {
+    .site-header__wrapper {
+      background-color: $site-header__wrapper-bgc--open;
+    }
+  }
+}
+
+.site-header__menu-button {
+  display: none;
+  position: absolute;
+  top: 55px;
+
+  @media (max-width: $desktop) {
+    display: flex;
+  }
+}
+
+.site-header__inner-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  padding-top: 30px;
+  align-items: start;
+}
+
+.site-header__inner-layout--open {
+  @media (max-width: $desktop) {
+    grid-template-rows: none;
+
+    .site-header__search-field {
+      display: grid;
+      grid-column: 1 / -1;
+      grid-row: 2 / 3;
+      margin-top: 10px;
+    }
+
+    .site-header__site-navigation {
+      display: grid;
+      margin-bottom: 75px;
+    }
+
+    .site-navigation__link {
+      color: $site-navigation__link-color--open;
+    }
+
+    .logo__image {
+      fill: $white;
+    }
+
+    .header-functional-links__icon {
+      stroke: $header-functional-links__icon-stroke--open;
+    }
+  }
+}
+
+.site-header__search-field {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin-top: 12px;
+
+  @media (max-width: $desktop) {
+    display: none;
+  }
+}
+
+.site-header__logo {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  justify-self: center;
+  margin-bottom: 19px;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 20px;
+  }
+}
+
+.site-header__header-functional-links {
+  grid-column: 3 / -1;
+  grid-row: 1 / 2;
+  justify-self: end;
+  margin-top: 12px;
+
+  @media (max-width: $desktop) {
+    margin-top: 24px;
+  }
+}
+
+.site-header__site-navigation {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  justify-self: center;
+  margin-top: 18px;
+  margin-bottom: 19px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: $site-header__site-navigation-before-bgc;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+  }
+
+  @media (max-width: $desktop) {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    justify-self: auto;
+    display: none;
+    margin-top: 55px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: 35px;
+  }
+}
+
+.site-header__functional-link-login {
+  @media (max-width: $desktop) {
+    display: none;
+  }
+}
