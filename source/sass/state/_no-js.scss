@@ -1,0 +1,39 @@
+.no-js {
+  @media (max-width: $desktop) {
+    .site-header__wrapper {
+      background-color: $site-header__wrapper-bgc--open;
+    }
+
+    .site-header__menu-button {
+      display: none;
+    }
+
+    .site-header__inner-layout {
+      grid-template-rows: none;
+    }
+
+    .site-header__search-field {
+      display: grid;
+      grid-column: 1 / -1;
+      grid-row: 2 / 3;
+      margin-top: 10px;
+    }
+
+    .site-header__site-navigation {
+      display: grid;
+      margin-bottom: 75px;
+    }
+
+    .site-navigation__link {
+      color: $site-navigation__link-color--open;
+    }
+
+    .logo__image {
+      fill: $white;
+    }
+
+    .header-functional-links__icon {
+      stroke: $header-functional-links__icon-stroke--open;
+    }
+  }
+}

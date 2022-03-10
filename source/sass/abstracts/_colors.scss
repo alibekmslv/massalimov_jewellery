@@ -1,6 +1,27 @@
 $black: #000000;
 $white: #ffffff;
+$white-15: #ffffff26;
 $zeus: #1d1613;
 $dawn: #9b9997;
 $muesli: #a87b62;
 $pearl-bush: #f0eae4;
+$desert-storm: #f6f5f4;
+
+// Colors by purpose
+$site-navigation__link-color: $zeus;
+$header-functional-links__button-color: $zeus;
+$search-field__input-placeholder-color: $dawn;
+$logo__image-fill: $muesli;
+$site-header__site-navigation-before-bgc: $desert-storm;
+$site-navigation__link-color--open: $white;
+$site-navigation__link-color--secondary-menu: $white;
+$site-header__wrapper-bgc--open: $muesli;
+$site-navigation__button-color: $white;
+$menu-button__icon-stroke: $zeus;
+$menu-button__icon-stroke--open: $white;
+$header-functional-links__icon-stroke--open: $white;
+$header-functional-links__icon-stroke: $zeus;
+$search-field-bgc--open: $white-15;
+$search-field__input-color--open: $white;
+$search-field__icon-fill: $black;
+$search-field__icon-fill--open: $white;
