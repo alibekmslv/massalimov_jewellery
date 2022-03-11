@@ -6,6 +6,58 @@ $dawn: #9b9997;
 $muesli: #a87b62;
 $pearl-bush: #f0eae4;
 $desert-storm: #f6f5f4;
+$science-blue: #0969da;
+$science-blue-50: #096bda82;
+
+:root,
+[data-color-mode="light"][data-light-theme="light"] {
+  --site-footer-bgc: #{$white};
+  --button-color: #{$zeus};
+  --button-bgc: #{$pearl-bush};
+  --button-border-color: #{$zeus};
+  --button-bgc-hover: #{darken($pearl-bush, 10)};
+  --button-border-color-hover: #{darken($zeus, 10)};
+  --button-box-shadow: 0 0 0 3px #{$science-blue-50};
+  --button--primary-color: #{$white};
+  --button--primary-bgc: #{$muesli};
+  --button--primary-border-color: #{$muesli};
+  --button--primary-bgc-hover: #{darken($muesli, 10)};
+  --button--primary-border-color-hover: #{darken($muesli, 10)};
+  --button--outline-color: #{$zeus};
+  --button--outline-bgc: #{$white};
+  --button--ouline-border-color: #{$muesli};
+  --button--outline-bgc-hover: #{darken($white, 10)};
+  --button--ouline-border-color-hover: #{darken($muesli, 10)};
+  --button--invisible-color: #{$zeus};
+  --button--invisible-color-hover: #{$muesli};
+  --title-color: #{$zeus};
+  --subtitle-color: #{$zeus};
+  --subtitle--subtle-color: #{lighten($black, 30)};
+  --link-color: #{$science-blue};
+  --link-color-hover: #{$muesli};
+  --link--primary-color: #{$zeus};
+  --form-control-color: #{$zeus};
+  --form-control-color-hover: #{$muesli};
+  --form-control-color-placeholder: #{$dawn};
+  --form-control-color-hover-placeholder: #{darken($dawn, 10)};
+  --form-control-box-shadow: 0 0 0 3px #{$science-blue-50};
+  --input-group-border-bottom-color: #{$zeus};
+}
+
+[data-color-mode="dark"][data-dark-theme="dark"] {
+  --site-footer-bgc: #{$black};
+  --button-border-color: #{$pearl-bush};
+  --button-box-shadow: 0 0 0 3px #{$science-blue};
+  --button--invisible-color: #{$white};
+  --title-color: #{$white};
+  --subtitle-color: #{$white};
+  --subtitle--subtle-color: #{$dawn};
+  --link--primary-color: #{$white};
+  --form-control-color: #{$white};
+  --form-control-color-hover-placeholder: #{lighten($dawn, 10)};
+  --form-control-box-shadow: 0 0 0 3px #{$science-blue};
+  --input-group-border-bottom-color: #{$white};
+}
 
 // Colors by purpose
 $site-navigation__link-color: $zeus;
