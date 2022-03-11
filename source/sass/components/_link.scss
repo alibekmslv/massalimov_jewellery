@@ -1,0 +1,46 @@
+.link {
+  color: var(--link-color);
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition-property: color;
+
+  &:hover,
+  &:active {
+    color: var(--link-color-hover);
+    text-decoration: underline;
+    transition-duration: 0.1s;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: var(--button-box-shadow);
+  }
+}
+
+.link--primary {
+  color: var(--link--primary-color);
+}
+
+@media (max-width: $tablet) {
+  .link--m-icon-only {
+    .link__icon {
+      width: 21px;
+      height: 21px;
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+
+    .link__text {
+      display: none;
+    }
+  }
+}
+
+.link__icon {
+  margin-bottom: -1px;
+  margin-right: 15px;
+  fill: currentColor;
+
+  &:only-child {
+    margin-right: 0;
+  }
+}

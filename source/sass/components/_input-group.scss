@@ -1,0 +1,9 @@
+.input-group {
+  display: flex;
+  border-bottom: 1px solid var(--input-group-border-bottom-color);
+}
+
+.input-group__button {
+  padding-right: 0;
+  padding-left: 0;
+}

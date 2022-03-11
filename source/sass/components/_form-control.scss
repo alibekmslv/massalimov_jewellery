@@ -1,0 +1,35 @@
+.form-control {
+  padding: 9px 0;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--form-control-color);
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition-property: color, background-color;
+  box-sizing: border-box;
+
+  &:hover,
+  &:active {
+    color: var(--form-control-color-hover);
+  }
+
+  &::placeholder {
+    color: var(--form-control-color-placeholder);
+  }
+
+  &:hover::placeholder {
+    color: var(--form-control-color-hover-placeholder);
+    transition-duration: 0.1s;
+  }
+
+  &:focus {
+    box-shadow: var(--form-control-box-shadow);
+  }
+}
+
+.form-control--block {
+  width: 100%;
+  display: block;
+}
