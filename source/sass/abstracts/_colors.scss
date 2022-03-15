@@ -4,6 +4,7 @@ $white-15: #ffffff26;
 $zeus: #1d1613;
 $dawn: #9b9997;
 $muesli: #a87b62;
+$judge-gray: #564034;
 $pearl-bush: #f0eae4;
 $desert-storm: #f6f5f4;
 $science-blue: #0969da;
@@ -11,6 +12,8 @@ $science-blue-50: #096bda82;
 
 :root,
 [data-color-mode="light"][data-light-theme="light"] {
+  --outline-box-shadow: 0 0 0 3px #{$science-blue-50};
+  --text-default-color: #{$black};
   --site-footer-bgc: #{$white};
   --button-color: #{$zeus};
   --button-bgc: #{$pearl-bush};
@@ -33,30 +36,57 @@ $science-blue-50: #096bda82;
   --title-color: #{$zeus};
   --subtitle-color: #{$zeus};
   --subtitle--subtle-color: #{lighten($black, 30)};
+  --subtitle--italic-color: #{$zeus};
   --link-color: #{$science-blue};
   --link-color-hover: #{$muesli};
   --link--primary-color: #{$zeus};
+  --link--secondary-color: #{$dawn};
+  --link--lead-after-bgc: #{$muesli};
   --form-control-color: #{$zeus};
   --form-control-color-hover: #{$muesli};
   --form-control-color-placeholder: #{$dawn};
   --form-control-color-hover-placeholder: #{darken($dawn, 10)};
   --form-control-box-shadow: 0 0 0 3px #{$science-blue-50};
   --input-group-border-bottom-color: #{$zeus};
+  --main-banner-before-bgc: #{$judge-gray};
+  --main-banner-bgc: #{$judge-gray};
+  --product-card__title-color: #{$zeus};
+  --product-card__title-color-hover: #{$muesli};
+  --product-card__price-color: #{$zeus};
+  --product-card__price-color-hover: #{$muesli};
+  --text-muted: #{$dawn};
+  --blog-masonry__info-color: #{$pearl-bush};
+  --dropdown--color: #{$zeus};
+  --accordion__item-border-color: #{$muesli};
+  --accordion__icon-stroke: #{$muesli};
+  --accordion__icon-stroke-hover: #{$zeus};
 }
 
-[data-color-mode="dark"][data-dark-theme="dark"] {
+[data-color-mode="dark"][data-dark-theme="dark"],
+[data-color-mode="dark"][data-dark-theme="dark_pastel"] {
   --site-footer-bgc: #{$black};
+  --text-default-color: #{$white};
   --button-border-color: #{$pearl-bush};
   --button-box-shadow: 0 0 0 3px #{$science-blue};
   --button--invisible-color: #{$white};
   --title-color: #{$white};
   --subtitle-color: #{$white};
   --subtitle--subtle-color: #{$dawn};
+  --subtitle--italic-color: #{$white};
   --link--primary-color: #{$white};
   --form-control-color: #{$white};
   --form-control-color-hover-placeholder: #{lighten($dawn, 10)};
   --form-control-box-shadow: 0 0 0 3px #{$science-blue};
   --input-group-border-bottom-color: #{$white};
+  --product-card__title-color: #{$white};
+  --product-card__price-color: #{$white};
+  --blog-masonry__info-color: #{$zeus};
+  --dropdown--color: #{$white};
+  --accordion__icon-stroke-hover: #{$white};
+}
+
+[data-color-mode="dark"][data-dark-theme="dark"] {
+  background-color: $black;
 }
 
 // Colors by purpose

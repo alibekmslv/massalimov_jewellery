@@ -2,6 +2,7 @@
   color: var(--link-color);
   transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
   transition-property: color;
+  cursor: pointer;
 
   &:hover,
   &:active {
@@ -18,6 +19,30 @@
 
 .link--primary {
   color: var(--link--primary-color);
+}
+
+.link--secondary {
+  color: var(--link--secondary-color);
+}
+
+.link--underline {
+  line-height: 21px;
+  max-width: max-content;
+  position: relative;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 2px;
+    background-color: var(--link--lead-after-bgc);
+  }
 }
 
 @media (max-width: $tablet) {

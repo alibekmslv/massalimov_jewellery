@@ -1,0 +1,48 @@
+.main-banner {
+  background-image: url("../img/backgrounds/main-page-hero-desktop.jpg");
+  background-color: var(--main-banner-bgc);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 463px;
+  padding-top: 180px;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 120px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/main-page-hero-desktop@2x.jpg");
+  }
+
+  @media (max-width: $desktop) {
+    background-image: url("../img/backgrounds/main-page-hero-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/main-page-hero-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $tablet) {
+    background-image: url("../img/backgrounds/main-page-hero-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/main-page-hero-mobile@2x.jpg");
+    }
+  }
+}
+
+.main-banner::before {
+  content: "";
+  display: block;
+  background-color: var(--main-banner-before-bgc);
+  opacity: 70%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.main-banner__content {
+  z-index: 10;
+  position: relative;
+}

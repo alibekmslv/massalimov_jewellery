@@ -37,3 +37,36 @@
 .d-flex {
   display: flex;
 }
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-lower {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.flex-justify-between {
+  justify-content: space-between;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.centered-box {
+  align-self: center;
+  margin: 0 auto;
+}

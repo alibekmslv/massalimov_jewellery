@@ -1,0 +1,14 @@
+.section-faq__accordion {
+  max-width: 970px;
+  margin-right: auto;
+  margin-bottom: 54px;
+  margin-left: auto;
+}
+
+.section-faq__title {
+  margin-bottom: 49px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 29px;
+  }
+}

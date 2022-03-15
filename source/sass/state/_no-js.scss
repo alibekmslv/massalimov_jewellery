@@ -36,4 +36,12 @@
       stroke: $header-functional-links__icon-stroke--open;
     }
   }
+
+  .slider__controls {
+    display: none;
+  }
+
+  .slider__pagination {
+    display: none;
+  }
 }
