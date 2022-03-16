@@ -1,0 +1,29 @@
+.section-ig-masonry {
+  padding-bottom: 129px;
+
+  @media (max-width: $desktop) {
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: $desktop) {
+    padding-bottom: 71px;
+  }
+}
+
+.section-ig-masonry__title {
+  margin-bottom: 20px;
+}
+
+.section-ig-masonry__asperand {
+  font-size: 42px;
+  line-height: 55px;
+  color: var(--text-default-color);
+}
+
+.section-ig-masonry__gallery-masonry {
+  margin-top: 65px;
+
+  @media (max-width: $tablet) {
+    margin-top: 50px;
+  }
+}

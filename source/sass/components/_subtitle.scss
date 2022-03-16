@@ -14,3 +14,16 @@
 .subtitle--subtle {
   color: var(--subtitle--subtle-color);
 }
+
+.subtitle--italic {
+  font-family: "Cormorant Garamond", "Times", sans-serif;
+  font-style: italic;
+  font-size: 38px;
+  line-height: 49px;
+  color: var(--subtitle--italic-color);
+
+  @media (max-width: $tablet) {
+    font-size: 34px;
+    line-height: 44px;
+  }
+}

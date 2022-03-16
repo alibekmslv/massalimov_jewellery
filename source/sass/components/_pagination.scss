@@ -1,0 +1,38 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination .link {
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.pagination button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.pagination__numbers {
+  .link + .link {
+    margin-left: 12px;
+  }
+}
+
+// .pagination__link {
+//   font-weight: 500;
+//   line-height: 21px;
+//   color: var(--pagination__link-color);
+//   transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+//   transition-property: color;
+
+//   &:hover {
+//     color: var(--pagination__link-color-hover);
+//     transition-duration: 0.1s;
+//   }
+// }
+
+.pagination__link--current {
+  color: var(--pagination__link--current--color);
+}

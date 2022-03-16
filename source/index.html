@@ -1,174 +1,624 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Jewellery</title>
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jewellery</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
 
-<body class="page-body no-js">
-  <!-- site-header--open -->
-  <header class="site-header">
-    <div class="site-header__wrapper container">
-      <!-- menu-button--open -->
-      <button class="menu-button site-header__menu-button" type="button">
-        <span class="visually-hidden">Open Menu</span>
-        <svg class="menu-button__icon" width="25" height="16" aria-hidden="true">
-          <use class="menu-button__icon-menu" xlink:href="img/sprite_auto.svg#icon-mobile-menu"></use>
-        </svg>
-      </button>
-      <!-- site-header__inner-layout--open -->
-      <div class="site-header__inner-layout">
-        <form class="search-field site-header__search-field" action="#" method="GET">
-          <label for="search" class="visually-hidden">Search</label>
-          <input class="search-field__input" id="search" type="search" placeholder="Type here to search"
-            name="search" />
-          <svg class="search-field__icon" width="14" height="14" aria-hidden="true">
-            <use class="search-field__icon-use" xlink:href="img/sprite_auto.svg#icon-magnifying-glass"></use>
+  <body class="page-body no-js">
+    <!-- site-header--open -->
+    <header class="site-header">
+      <div class="site-header__wrapper container">
+        <!-- menu-button--open -->
+        <button class="menu-button site-header__menu-button" type="button">
+          <span class="visually-hidden">Open Menu</span>
+          <svg class="menu-button__icon" width="25" height="16" aria-hidden="true">
+            <use class="menu-button__icon-menu" xlink:href="img/sprite_auto.svg#icon-mobile-menu"></use>
           </svg>
-        </form>
-        <a class="logo site-header__logo" href="index.html">
-          <svg class="logo__image" width="66" height="66">
-            <use class="logo__image-use" xlink:href="img/logo.svg#logo"></use>
-          </svg>
-        </a>
-        <nav class="site-navigation site-header__site-navigation">
-          <ul class="site-navigation__list">
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="#">What's new</a>
+        </button>
+        <!-- site-header__inner-layout--open -->
+        <div class="site-header__inner-layout">
+          <form class="search-field site-header__search-field" action="#" method="GET">
+            <label for="search" class="visually-hidden">Search</label>
+            <input class="search-field__input" id="search" type="search" placeholder="Type here to search"
+              name="search" />
+            <svg class="search-field__icon" width="14" height="14" aria-hidden="true">
+              <use class="search-field__icon-use" xlink:href="img/sprite_auto.svg#icon-magnifying-glass"></use>
+            </svg>
+          </form>
+          <a class="logo site-header__logo" href="index.html">
+            <svg class="logo__image" width="66" height="66">
+              <use class="logo__image-use" xlink:href="img/logo.svg#logo"></use>
+            </svg>
+          </a>
+          <nav class="site-navigation site-header__site-navigation">
+            <ul class="site-navigation__list">
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#">What's new</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#">Chockers</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#">Necklaces</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#">Rings</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#">Earrings</a>
+              </li>
+            </ul>
+            <ul class="site-navigation__list site-navigation__list--secondary-menu">
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#">About CH</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#">Stores & Hours</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <a class="site-navigation__button" href="#">Login</a>
+          </nav>
+          <ul class="header-functional-links site-header__header-functional-links">
+            <li class="header-functional-links__item site-header__functional-link-login">
+              <a class="header-functional-links__button" href="#">Login</a>
             </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="#">Chockers</a>
-            </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="#">Necklaces</a>
-            </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="#">Rings</a>
-            </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="#">Earrings</a>
+            <li class="header-functional-links__item">
+              <a class="header-functional-links__button" href="#">
+                <svg class="header-functional-links__icon" width="20" height="18" aria-hidden="true">
+                  <use xlink:href="img/sprite_auto.svg#icon-shopping-bag"></use>
+                </svg>
+                <span class="show-on-desktop">Cart </span>
+                <span class="header-functional-links__cart-count show-on-desktop">0</span></a>
             </li>
           </ul>
-          <ul class="site-navigation__list site-navigation__list--secondary-menu">
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="#">About CH</a>
-            </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="#">Stores & Hours</a>
-            </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="#">Contact Us</a>
-            </li>
-          </ul>
-          <a class="site-navigation__button" href="#">Login</a>
-        </nav>
-        <ul class="header-functional-links site-header__header-functional-links">
-          <li class="header-functional-links__item site-header__functional-link-login">
-            <a class="header-functional-links__button" href="#">Login</a>
-          </li>
-          <li class="header-functional-links__item">
-            <a class="header-functional-links__button" href="#">
-              <svg class="header-functional-links__icon" width="20" height="18" aria-hidden="true">
-                <use xlink:href="img/sprite_auto.svg#icon-shopping-bag"></use>
+        </div>
+      </div>
+    </header>
+    <main class="site-main">
+      <h1 class="visually-hidden">Jewellery's website main page</h1>
+      <div class="main-banner text-center" data-color-mode="dark" data-dark-theme="dark_pastel">
+        <div class="main-banner__content container">
+          <h2 class="title text-upper">Perfection</h2>
+          <p class="subtitle subtitle--italic text-lower">Made to be yours</p>
+        </div>
+      </div>
+      <section class="new-in container">
+        <h2 class="title title--second text-capitalize text-center">New in</h2>
+        <div class="slider">
+          <div class="slider__controls d-flex flex-justify-between">
+            <button class="button button--invisible slider__button">
+              <svg class="button__icon" width="30" height="11" aria-hidden="true">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
               </svg>
-              <span class="show-on-desktop">Cart </span>
-              <span class="header-functional-links__cart-count show-on-desktop">0</span></a>
+            </button>
+            <button class="button button--invisible slider__button">
+              <svg class="button__icon" width="30" height="11" aria-hidden="true">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <a class="link link--primary link--underline text-capitalize" href="#">Shop Now</a>
+          <div class="slider__container">
+            <a class="product-card slider__slide slider__slide--show" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-mobile.webp 1x,img/products/purple-gemstone-necklace-newin-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-tablet.webp 1x,img/products/purple-gemstone-necklace-newin-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/products/purple-gemstone-necklace-newin-desktop.webp 1x,img/products/purple-gemstone-necklace-newin-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-mobile.jpg 1x, img/products/purple-gemstone-necklace-newin-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-tablet.jpg 1x, img/products/purple-gemstone-necklace-newin-tablet@2x.jpg 2x">
+                <img class="product-card__image" width="270" height="284"
+                  src="img/products/purple-gemstone-necklace-newin-desktop.jpg"
+                  srcset="img/products/purple-gemstone-necklace-newin-desktop@2x.jpg 2x"
+                  alt="Picture of necklace with amethyst">
+              </picture>
+              <h3 class="product-card__title">Necklace with amethyst</h3>
+              <p class="product-card__price">$ 145</p>
+            </a>
+            <a class="product-card slider__slide slider__slide--show" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/products/layered-choker-necklace-newin-mobile.webp 1x,img/products/layered-choker-necklace-newin-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/products/layered-choker-necklace-newin-tablet.webp 1x,img/products/layered-choker-necklace-newin-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/products/layered-choker-necklace-newin-desktop.webp 1x,img/products/layered-choker-necklace-newin-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/products/layered-choker-necklace-newin-mobile.jpg 1x, img/products/layered-choker-necklace-newin-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/products/layered-choker-necklace-newin-tablet.jpg 1x, img/products/layered-choker-necklace-newin-tablet@2x.jpg 2x">
+                <img class="product-card__image" width="270" height="284"
+                  src="img/products/layered-choker-necklace-newin-desktop.jpg"
+                  srcset="img/products/layered-choker-necklace-newin-desktop@2x.jpg 2x" alt="Picture of layered сhoker">
+              </picture>
+              <h3 class="product-card__title">Layered сhoker</h3>
+              <p class="product-card__price">$ 115</p>
+            </a>
+            <a class="product-card slider__slide slider__slide--show" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.webp 1x,img/products/dainty-gold-necklace-newin-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.webp 1x,img/products/dainty-gold-necklace-newin-desktop@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.webp 1x,img/products/dainty-gold-necklace-newin-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.jpg 1x, img/products/dainty-gold-necklace-newin-desktop@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.jpg 1x, img/products/dainty-gold-necklace-newin-desktop@2x.jpg 2x">
+                <img class="product-card__image" width="270" height="284"
+                  src="img/products/dainty-gold-necklace-newin-desktop.jpg"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop@2x.jpg 2x" alt="Picture of gold chain">
+              </picture>
+              <h3 class="product-card__title">Gold chain</h3>
+              <p class="product-card__price">$ 215</p>
+            </a>
+            <a class="product-card slider__slide slider__slide--show" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.webp 1x,img/products/galaxy-earrings-newin-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.webp 1x,img/products/galaxy-earrings-newin-desktop@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/products/galaxy-earrings-newin-desktop.webp 1x,img/products/galaxy-earrings-newin-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.jpg 1x, img/products/galaxy-earrings-newin-desktop@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.jpg 1x, img/products/galaxy-earrings-newin-desktop@2x.jpg 2x">
+                <img class="product-card__image" width="270" height="284"
+                  src="img/products/galaxy-earrings-newin-desktop.jpg"
+                  srcset="img/products/galaxy-earrings-newin-desktop@2x.jpg 2x" alt="Picture of galaxy earrings">
+              </picture>
+              <h3 class="product-card__title">Galaxy earrings</h3>
+              <p class="product-card__price">$ 95</p>
+            </a>
+            <a class="product-card slider__slide slider__slide--hidden" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.webp 1x,img/products/galaxy-earrings-newin-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.webp 1x,img/products/galaxy-earrings-newin-desktop@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/products/galaxy-earrings-newin-desktop.webp 1x,img/products/galaxy-earrings-newin-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.jpg 1x, img/products/galaxy-earrings-newin-desktop@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.jpg 1x, img/products/galaxy-earrings-newin-desktop@2x.jpg 2x">
+                <img class="product-card__image" width="270" height="284"
+                  src="img/products/galaxy-earrings-newin-desktop.jpg"
+                  srcset="img/products/galaxy-earrings-newin-desktop@2x.jpg 2x" alt="Picture of galaxy earrings">
+              </picture>
+              <h3 class="product-card__title">Galaxy earrings</h3>
+              <p class="product-card__price">$ 95</p>
+            </a>
+            <a class="product-card slider__slide slider__slide--hidden" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/products/layered-choker-necklace-newin-mobile.webp 1x,img/products/layered-choker-necklace-newin-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/products/layered-choker-necklace-newin-tablet.webp 1x,img/products/layered-choker-necklace-newin-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/products/layered-choker-necklace-newin-desktop.webp 1x,img/products/layered-choker-necklace-newin-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/products/layered-choker-necklace-newin-mobile.jpg 1x, img/products/layered-choker-necklace-newin-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/products/layered-choker-necklace-newin-tablet.jpg 1x, img/products/layered-choker-necklace-newin-tablet@2x.jpg 2x">
+                <img class="product-card__image" width="270" height="284"
+                  src="img/products/layered-choker-necklace-newin-desktop.jpg"
+                  srcset="img/products/layered-choker-necklace-newin-desktop@2x.jpg 2x" alt="Picture of layered сhoker">
+              </picture>
+              <h3 class="product-card__title">Layered сhoker</h3>
+              <p class="product-card__price">$ 115</p>
+            </a>
+            <a class="product-card slider__slide slider__slide--hidden" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-mobile.webp 1x,img/products/purple-gemstone-necklace-newin-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-tablet.webp 1x,img/products/purple-gemstone-necklace-newin-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/products/purple-gemstone-necklace-newin-desktop.webp 1x,img/products/purple-gemstone-necklace-newin-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-mobile.jpg 1x, img/products/purple-gemstone-necklace-newin-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-tablet.jpg 1x, img/products/purple-gemstone-necklace-newin-tablet@2x.jpg 2x">
+                <img class="product-card__image" width="270" height="284"
+                  src="img/products/purple-gemstone-necklace-newin-desktop.jpg"
+                  srcset="img/products/purple-gemstone-necklace-newin-desktop@2x.jpg 2x"
+                  alt="Picture of necklace with amethyst">
+              </picture>
+              <h3 class="product-card__title">Necklace with amethyst</h3>
+              <p class="product-card__price">$ 145</p>
+            </a>
+            <a class="product-card slider__slide slider__slide--hidden" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.webp 1x,img/products/dainty-gold-necklace-newin-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.webp 1x,img/products/dainty-gold-necklace-newin-desktop@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.webp 1x,img/products/dainty-gold-necklace-newin-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.jpg 1x, img/products/dainty-gold-necklace-newin-desktop@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.jpg 1x, img/products/dainty-gold-necklace-newin-desktop@2x.jpg 2x">
+                <img class="product-card__image" width="270" height="284"
+                  src="img/products/dainty-gold-necklace-newin-desktop.jpg"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop@2x.jpg 2x" alt="Picture of gold chain">
+              </picture>
+              <h3 class="product-card__title">Gold chain</h3>
+              <p class="product-card__price">$ 215</p>
+            </a>
+            <a class="product-card slider__slide slider__slide--hidden" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/products/layered-choker-necklace-newin-mobile.webp 1x,img/products/layered-choker-necklace-newin-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/products/layered-choker-necklace-newin-tablet.webp 1x,img/products/layered-choker-necklace-newin-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/products/layered-choker-necklace-newin-desktop.webp 1x,img/products/layered-choker-necklace-newin-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/products/layered-choker-necklace-newin-mobile.jpg 1x, img/products/layered-choker-necklace-newin-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/products/layered-choker-necklace-newin-tablet.jpg 1x, img/products/layered-choker-necklace-newin-tablet@2x.jpg 2x">
+                <img class="product-card__image" width="270" height="284"
+                  src="img/products/layered-choker-necklace-newin-desktop.jpg"
+                  srcset="img/products/layered-choker-necklace-newin-desktop@2x.jpg 2x" alt="Picture of layered сhoker">
+              </picture>
+              <h3 class="product-card__title">Layered сhoker</h3>
+              <p class="product-card__price">$ 115</p>
+            </a>
+            <a class="product-card slider__slide slider__slide--hidden" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-mobile.webp 1x, img/products/purple-gemstone-necklace-newin-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-tablet.webp 1x, img/products/purple-gemstone-necklace-newin-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/products/purple-gemstone-necklace-newin-desktop.webp 1x, img/products/purple-gemstone-necklace-newin-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-mobile.jpg 1x, img/products/purple-gemstone-necklace-newin-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-tablet.jpg 1x, img/products/purple-gemstone-necklace-newin-tablet@2x.jpg 2x">
+                <img class="product-card__image" width="270" height="284"
+                  src="img/products/purple-gemstone-necklace-newin-desktop.jpg"
+                  srcset="img/products/purple-gemstone-necklace-newin-desktop@2x.jpg 2x"
+                  alt="Picture of necklace with amethyst">
+              </picture>
+              <h3 class="product-card__title">Necklace with amethyst</h3>
+              <p class="product-card__price">$ 145</p>
+            </a>
+            <a class="product-card slider__slide slider__slide--hidden" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.webp 1x, img/products/galaxy-earrings-newin-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.webp 1x, img/products/galaxy-earrings-newin-desktop@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/products/galaxy-earrings-newin-desktop.webp 1x, img/products/galaxy-earrings-newin-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.jpg 1x, img/products/galaxy-earrings-newin-desktop@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.jpg 1x, img/products/galaxy-earrings-newin-desktop@2x.jpg 2x">
+                <img class="product-card__image" width="270" height="284"
+                  src="img/products/galaxy-earrings-newin-desktop.jpg"
+                  srcset="img/products/galaxy-earrings-newin-desktop@2x.jpg 2x" alt="Picture of galaxy earrings">
+              </picture>
+              <h3 class="product-card__title">Galaxy earrings</h3>
+              <p class="product-card__price">$ 95</p>
+            </a>
+            <a class="product-card slider__slide slider__slide--hidden" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.webp 1x, img/products/dainty-gold-necklace-newin-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.webp 1x, img/products/dainty-gold-necklace-newin-desktop@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.webp 1x,img/products/dainty-gold-necklace-newin-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.jpg 1x, img/products/dainty-gold-necklace-newin-desktop@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.jpg 1x, img/products/dainty-gold-necklace-newin-desktop@2x.jpg 2x">
+                <img class="product-card__image" width="270" height="284"
+                  src="img/products/dainty-gold-necklace-newin-desktop.jpg"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop@2x.jpg 2x" alt="Picture of gold chain">
+              </picture>
+              <h3 class="product-card__title">Gold chain</h3>
+              <p class="product-card__price">$ 215</p>
+            </a>
+          </div>
+          <div class="pagination slider__pagination" aria-label="Slider Pagination">
+            <div class="pagination__numbers">
+              <button class="link link--primary" aria-label="Slide 1">1</button>
+              <button class="link link--secondary" aria-label="Slide 2">2</button>
+              <button class="link link--secondary" aria-label="Slide 3">3</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-blog container">
+        <div class="text-center">
+          <h2 class="title title--second">Blog</h2>
+          <a class="link link--primary link--underline text-capitalize text-center" href="#">Read All</a>
+        </div>
+        <ul class="blog-masonry list" data-color-mode="light" data-light-theme="light">
+          <li class="blog-masonry__item">
+            <picture class="blog-masonry__img-thumb-wide">
+              <source type="image/webp" srcset="img/blog/blog-1-masonry-wide-desktop.webp 1x, img/blog/blog-1-masonry-wide-desktop@2x.webp 2x">
+              <img class="blog-masonry__img-thumb-wide" loading="lazy" width="570" height="630" src="img/blog/blog-1-masonry-wide-desktop.jpg" srcset="img/blog/blog-1-masonry-wide-desktop@2x.jpg 2x" alt="">
+            </picture>
+            <picture class="blog-masonry__img-thumb-small">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/blog/blog-1-mobile.webp 1x, img/blog/blog-1-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)"  srcset="img/blog/blog-1-tablet.webp 1x, img/blog/blog-1-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/blog/blog-1-masonry-small-desktop.webp 1x, img/blog/blog-1-masonry-small-desktop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/blog/blog-1-mobile.jpg 1x, img/blog/blog-1-mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)"  srcset="img/blog/blog-1-tablet.jpg 1x, img/blog/blog-1-tablet@2x.jpg 2x">
+              <img class="blog-masonry__img-thumb-small" loading="lazy" width="285" height="300" src="img/blog/blog-1-masonry-small-desktop.jpg" srcset="img/blog/blog-1-masonry-small-desktop@2x.jpg 2x" alt="">
+            </picture>
+            <div class="blog-masonry__info">
+              <div class="centered-box text-center">
+                <time class="blog-masonry__date text-muted" datetime="2019-09-30">September 30, 2019</time>
+                <h3 class="title title--third">How to care for<br>your jewellery</h3>
+                <a class="link link--primary link--underline text-capitalize" href="#">Read Article</a>
+              </div>
+            </div>
+          </li>
+          <li class="blog-masonry__item">
+            <picture class="blog-masonry__img-thumb-wide">
+              <source type="image/webp" srcset="img/blog/blog-2-masonry-wide-desktop.webp 1x, img/blog/blog-2-masonry-wide-desktop@2x.webp 2x">
+              <img class="blog-masonry__img-thumb-wide" loading="lazy" width="570" height="630" src="img/blog/blog-2-masonry-wide-desktop.jpg" srcset="img/blog/blog-2-masonry-wide-desktop@2x.jpg 2x" alt="">
+            </picture>
+            <picture class="blog-masonry__img-thumb-small">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/blog/blog-2-mobile.webp 1x, img/blog/blog-2-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/blog/blog-2-tablet.webp 1x, img/blog/blog-2-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/blog/blog-2-masonry-small-desktop.webp 1x, img/blog/blog-2-masonry-small-desktop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/blog/blog-2-mobile.jpg 1x, img/blog/blog-2-mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="img/blog/blog-2-tablet.jpg 1x, img/blog/blog-2-tablet@2x.jpg 2x">
+              <img class="blog-masonry__img-thumb-small" loading="lazy" width="285" height="300" src="img/blog/blog-2-masonry-small-desktop.jpg" srcset="img/blog/blog-2-masonry-small-desktop@2x.jpg 2x" alt="">
+            </picture>
+            <div class="blog-masonry__info">
+              <div class="centered-box text-center">
+                <time class="blog-masonry__date text-muted" datetime="2019-09-23">September 23, 2019</time>
+                <h3 class="title title--third">Power of<br>crystals</h3>
+                <a class="link link--primary link--underline text-capitalize" href="#">Read Article</a>
+              </div>
+            </div>
+          </li>
+          <li class="blog-masonry__item">
+            <picture class="blog-masonry__img-thumb-wide">
+              <source type="image/webp" srcset="img/blog/blog-3-masonry-wide-desktop.webp 1x, img/blog/blog-3-masonry-wide-desktop@2x.webp 2x">
+              <img class="blog-masonry__img-thumb-wide" loading="lazy" width="570" height="630" src="img/blog/blog-3-masonry-wide-desktop.jpg" srcset="img/blog/blog-3-masonry-wide-desktop@2x.jpg 2x" alt="">
+            </picture>
+            <picture class="blog-masonry__img-thumb-small">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/blog/blog-3-mobile.webp 1x, img/blog/blog-3-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/blog/blog-3-tablet.webp 1x, img/blog/blog-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/blog/blog-3-masonry-small-desktop.webp 1x, img/blog/blog-3-masonry-small-desktop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/blog/blog-3-mobile.jpg 1x, img/blog/blog-3-mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="img/blog/blog-3-tablet.jpg 1x, img/blog/blog-3-tablet@2x.jpg 2x">
+              <img class="blog-masonry__img-thumb-small" loading="lazy" width="285" height="300" src="img/blog/blog-3-masonry-small-desktop.jpg" srcset="img/blog/blog-3-masonry-small-desktop@2x.jpg 2x" alt="">
+            </picture>
+            <div class="blog-masonry__info">
+              <div class="centered-box text-center">
+                <time class="blog-masonry__date text-muted" datetime="2019-09-16">September 16, 2019</time>
+                <h3 class="title title--third">AW 19 trends</h3>
+                <a class="link link--primary link--underline text-capitalize" href="#">Read Article</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="section-faq container">
+        <h2 class="title title--second text-center section-faq__title">Frequently asked questions</h2>
+        <div class="accordion section-faq__accordion">
+          <div class="accordion__item accordion__item--open">
+            <p class="accordion__header">What materials are the&nbsp;jewellery&nbsp;made&nbsp;of?</p>
+            <p class="accordion__body">
+              Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and<br class="show-on-desktop"> crystals.
+            </p>
+            <button class="accordion__button" aria-label="Dropdown button">
+              <svg class="accordion__icon" width="15" height="10" aria-hidden="true">
+                <use xlink:href="img/sprite_auto.svg#icon-dropdown-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="accordion__item">
+            <p class="accordion__header">Which countries do&nbsp;you&nbsp;deliver&nbsp;to?</p>
+            <p class="accordion__body">
+              Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.
+            </p>
+            <button class="accordion__button" aria-label="Dropdown button">
+              <svg class="accordion__icon" width="15" height="8" aria-hidden="true">
+                <use xlink:href="img/sprite_auto.svg#icon-dropdown-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="accordion__item">
+            <p class="accordion__header">What are the&nbsp;payment&nbsp;methods?</p>
+            <p class="accordion__body">
+              Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.
+            </p>
+            <button class="accordion__button" aria-label="Dropdown button">
+              <svg class="accordion__icon" width="15" height="8" aria-hidden="true">
+                <use xlink:href="img/sprite_auto.svg#icon-dropdown-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        <div class="accordion__item">
+            <p class="accordion__header">Can I return the jewellery&nbsp;if&nbsp;it&nbsp;didn’t&nbsp;fit&nbsp;me?</p>
+            <p class="accordion__body">
+              Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.
+            </p>
+            <button class="accordion__button" aria-label="Dropdown button">
+              <svg class="accordion__icon" width="15" height="8" aria-hidden="true">
+                <use xlink:href="img/sprite_auto.svg#icon-dropdown-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section-ig-masonry">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="title title--second section-ig-masonry__title"><span class="section-ig-masonry__asperand">@</span>Chjewellery</h2>
+            <a class="link link--primary link--underline text-capitalize" href="#">Follow Us</a>
+          </div>
+          <div class="gallery-masonry section-ig-masonry__gallery-masonry">
+            <picture class="gallery-masonry__img">
+              <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/inst/inst-8-tablet.webp 1x, img/inst/inst-8-tablet@2x.webp 2x">
+              <source media="(max-width: 1023px)" srcset="img/inst/inst-8-tablet.jpg 1x, img/inst/inst-8-tablet@2x.jpg 2x">
+              <source type="image/webp"
+              srcset="img/inst/inst-8-desktop.webp 1x, img/inst/inst-8-desktop@2x.webp 2x">
+              <img class="gallery-masonry__img" src="img/inst/inst-8-desktop.jpg" width="230" height="230" srcset="img/inst/inst-8-desktop@2x.jpg" alt="">
+            </picture>
+            <picture class="gallery-masonry__img">
+              <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/inst/inst-2-tablet.webp 1x, img/inst/inst-2-tablet@2x.webp 2x">
+              <source media="(max-width: 1023px)" srcset="img/inst/inst-2-tablet.jpg 1x, img/inst/inst-2-tablet@2x.jpg 2x">
+              <source type="image/webp"
+              srcset="img/inst/inst-2-desktop.webp 1x, img/inst/inst-2-desktop@2x.webp 2x">
+              <img class="gallery-masonry__img" src="img/inst/inst-2-desktop.jpg" width="399" height="412" srcset="img/inst/inst-2-desktop@2x.jpg" alt="">
+            </picture>
+            <picture class="gallery-masonry__img">
+              <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/inst/inst-4-tablet.webp 1x, img/inst/inst-4-tablet@2x.webp 2x">
+              <source media="(max-width: 1023px)" srcset="img/inst/inst-4-tablet.jpg 1x, img/inst/inst-4-tablet@2x.jpg 2x">
+              <source type="image/webp"
+              srcset="img/inst/inst-4-desktop.webp 1x, img/inst/inst-4-desktop@2x.webp 2x">
+              <img class="gallery-masonry__img" src="img/inst/inst-4-desktop.jpg" width="230" height="230" srcset="img/inst/inst-4-desktop@2x.jpg" alt="">
+            </picture>
+            <picture class="gallery-masonry__img">
+              <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/inst/inst-6-tablet.webp 1x, img/inst/inst-6-tablet@2x.webp 2x">
+              <source media="(max-width: 1023px)" srcset="img/inst/inst-6-tablet.jpg 1x, img/inst/inst-6-tablet@2x.jpg 2x">
+              <source type="image/webp"
+              srcset="img/inst/inst-6-desktop.webp 1x, img/inst/inst-6-desktop@2x.webp 2x">
+              <img class="gallery-masonry__img" src="img/inst/inst-6-desktop.jpg" width="230" height="230" srcset="img/inst/inst-6-desktop@2x.jpg" alt="">
+            </picture>
+            <picture class="gallery-masonry__img">
+              <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/inst/inst-1-tablet.webp 1x, img/inst/inst-1-tablet@2x.webp 2x">
+              <source media="(max-width: 1023px)" srcset="img/inst/inst-1-tablet.jpg 1x, img/inst/inst-1-tablet@2x.jpg 2x">
+              <source type="image/webp"
+              srcset="img/inst/inst-1-desktop.webp 1x, img/inst/inst-1-desktop@2x.webp 2x">
+              <img class="gallery-masonry__img" src="img/inst/inst-1-desktop.jpg" width="230" height="150" srcset="img/inst/inst-1-desktop@2x.jpg" alt="">
+            </picture>
+            <picture class="gallery-masonry__img">
+              <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/inst/inst-5-tablet.webp 1x, img/inst/inst-5-tablet@2x.webp 2x">
+              <source media="(max-width: 1023px)" srcset="img/inst/inst-5-tablet.jpg 1x, img/inst/inst-5-tablet@2x.jpg 2x">
+              <source type="image/webp"
+              srcset="img/inst/inst-5-desktop.webp 1x, img/inst/inst-5-desktop@2x.webp 2x">
+              <img class="gallery-masonry__img" src="img/inst/inst-5-desktop.jpg" width="230" height="150" srcset="img/inst/inst-5-desktop@2x.jpg" alt="">
+            </picture>
+            <picture class="gallery-masonry__img">
+              <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/inst/inst-7-tablet.webp 1x, img/inst/inst-7-tablet@2x.webp 2x">
+              <source media="(max-width: 1023px)" srcset="img/inst/inst-7-tablet.jpg 1x, img/inst/inst-7-tablet@2x.jpg 2x">
+              <source type="image/webp"
+              srcset="img/inst/inst-7-desktop.webp 1x, img/inst/inst-7-desktop@2x.webp 2x">
+              <img class="gallery-masonry__img" src="img/inst/inst-7-desktop.jpg" width="230" height="150" srcset="img/inst/inst-7-desktop@2x.jpg" alt="">
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- data-color-mode="dark" data-dark-theme="dark" -->
+    <footer class="site-footer" data-color-mode="dark" data-dark-theme="dark">
+      <div class="site-footer__grid container">
+        <div class="site-footer__newsletter">
+          <h2 class="title title--second">The good stuff <br class="show-on-mobile">in&nbsp;your&nbsp;inbox </h2>
+          <p class="subtitle subtitle--subtle">News and updates from CH. <br
+              class="show-on-mobile">No&nbsp;spam,&nbsp;we&nbsp;promise.</p>
+          <form class="site-footer__form input-group" action="#">
+            <label class="visually-hidden" for="email">Your E-mail</label>
+            <input class="form-control form-control--block" type="email" name="email" placeholder="Your E-mail"
+              id="email" />
+            <button class="button button--invisible input-group__button" type="submit">
+              <span>Sign Up</span>
+              <svg class="button__icon" width="30" height="11" aria-hidden="true">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <ul class="site-footer__list site-footer__list--site-links list">
+          <li>
+            <a class="link link--primary" href="#">Ordering & Payment</a>
+          </li>
+          <li>
+            <a class="link link--primary" href="#">Terms & Conditions</a>
+          </li>
+          <li>
+            <a class="link link--primary" href="#">Returns & Exchanges</a>
+          </li>
+          <li>
+            <a class="link link--primary" href="#">Delivery</a>
+          </li>
+        </ul>
+        <ul class="site-footer__list site-footer__list--site-links list">
+          <li>
+            <a class="link link--primary" href="#">About CH</a>
+          </li>
+          <li>
+            <a class="link link--primary" href="#">Stores & Hours</a>
+          </li>
+          <li>
+            <a class="link link--primary" href="#">Jobs</a>
+          </li>
+          <li>
+            <a class="link link--primary" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <ul class="site-footer__list site-footer__list--icons list">
+          <li>
+            <a class="link link--primary link--m-icon-only" href="#">
+              <svg class="link__icon" width="15" height="15" aria-hidden="true">
+                <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+              </svg>
+              <span class="link__text">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a class="link link--primary link--m-icon-only" href="#">
+              <svg class="link__icon" width="15" height="15" aria-hidden="true">
+                <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
+              </svg>
+              <span class="link__text">Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a class="link link--primary link--m-icon-only" href="#">
+              <svg class="link__icon" width="15" height="15" aria-hidden="true">
+                <use xlink:href="img/sprite_auto.svg#icon-pinterest"></use>
+              </svg>
+              <span class="link__text">Pinterest</span>
+            </a>
+          </li>
+          <li>
+            <a class="link link--primary link--m-icon-only" href="#">
+              <svg class="link__icon" width="15" height="15" aria-hidden="true">
+                <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
+              </svg>
+              <span class="link__text">Twitter</span>
+            </a>
           </li>
         </ul>
       </div>
-    </div>
-  </header>
-  <main class="site-main">
-    <div class="container">
-      <h1>Main content</h1>
-    </div>
-  </main>
-  <!-- data-color-mode="dark" data-dark-theme="dark" -->
-  <footer class="site-footer" data-color-mode="dark" data-dark-theme="dark">
-    <div class="site-footer__grid container">
-      <div class="site-footer__newsletter">
-        <h2 class="title title--second">The good stuff <br class="show-on-mobile">in&nbsp;your&nbsp;inbox </h2>
-        <p class="subtitle subtitle--subtle">News and updates from CH. <br class="show-on-mobile">No&nbsp;spam,&nbsp;we&nbsp;promise.</p>
-        <form class="site-footer__form input-group" action="#">
-          <label class="visually-hidden" for="email">Your E-mail</label>
-          <input class="form-control form-control--block" type="email" name="email" placeholder="Your E-mail" />
-          <button class="button button--invisible input-group__button" type="submit">
-            <span>Sign Up</span>
-            <svg class="button__icon" width="30" height="11" aria-hidden="true">
-              <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
-            </svg>
-          </button>
-        </form>
-      </div>
-      <ul class="site-footer__list site-footer__list--site-links list">
-        <li>
-          <a class="link link--primary" href="#">Ordering & Payment</a>
-        </li>
-        <li>
-          <a class="link link--primary" href="#">Terms & Conditions</a>
-        </li>
-        <li>
-          <a class="link link--primary" href="#">Returns & Exchanges</a>
-        </li>
-        <li>
-          <a class="link link--primary" href="#">Delivery</a>
-        </li>
-      </ul>
-      <ul class="site-footer__list site-footer__list--site-links list">
-        <li>
-          <a class="link link--primary" href="#">About CH</a>
-        </li>
-        <li>
-          <a class="link link--primary" href="#">Stores & Hours</a>
-        </li>
-        <li>
-          <a class="link link--primary" href="#">Jobs</a>
-        </li>
-        <li>
-          <a class="link link--primary" href="#">Contact Us</a>
-        </li>
-      </ul>
-      <ul class="site-footer__list site-footer__list--icons list">
-        <li>
-          <a class="link link--primary link--m-icon-only" href="#">
-            <svg class="link__icon" width="15" height="15" aria-hidden="true">
-              <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
-            </svg>
-            <span class="link__text">Facebook</span>
-          </a>
-        </li>
-        <li>
-          <a class="link link--primary link--m-icon-only" href="#">
-            <svg class="link__icon" width="15" height="15" aria-hidden="true">
-              <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
-            </svg>
-            <span class="link__text">Instagram</span>
-          </a>
-        </li>
-        <li>
-          <a class="link link--primary link--m-icon-only" href="#">
-            <svg class="link__icon" width="15" height="15" aria-hidden="true">
-              <use xlink:href="img/sprite_auto.svg#icon-pinterest"></use>
-            </svg>
-            <span class="link__text">Pinterest</span>
-          </a>
-        </li>
-        <li>
-          <a class="link link--primary link--m-icon-only" href="#">
-            <svg class="link__icon" width="15" height="15" aria-hidden="true">
-              <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
-            </svg>
-            <span class="link__text">Twitter</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-  <script src="js/script.js"></script>
-</body>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 
-</html>
+  </html>
