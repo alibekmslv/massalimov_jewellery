@@ -1,9 +1,41 @@
 .accordion {
-  color: var(--accordion--color);
+  color: var(--text-default-color);
   margin-bottom: 40px;
 }
 
+.accordion--filter {
+  .accordion__item {
+    padding-top: 23px;
+    padding-right: 23px;
+    padding-bottom: 27px;
+    padding-left: 24px;
+  }
+
+  .accordion__header {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .accordion__body {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 10px;
+    grid-column: 1 / -1;
+  }
+
+  .accordion__body--range-filter {
+    padding-left: 0;
+  }
+
+  .accordion__button {
+    grid-row: 1 / 2;
+  }
+}
+
 .accordion__item {
+  margin: 0;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: auto min-content;
@@ -13,7 +45,7 @@
   padding: 44px 49px 43px 42px;
   border-width: 1px;
   border-style: solid;
-  border-color: var(--accordion__item-border-color);
+  border-color: var(--primary-color);
   border-bottom-width: 0;
 
   @media (max-width: $tablet) {
