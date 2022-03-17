@@ -38,17 +38,9 @@
 
     .filter-form__close-button {
       position: absolute;
-      display: block;
+      display: flex;
       top: -16px;
       right: -16px;
-      padding: 0;
-      border: none;
-      background-color: transparent;
-
-      &:focus {
-        outline: none;
-        box-shadow: var(--button-box-shadow);
-      }
     }
   }
 

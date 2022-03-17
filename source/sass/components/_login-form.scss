@@ -1,0 +1,102 @@
+.login-form {
+  box-sizing: border-box;
+  background-color: var(--login-form-bgc);
+  width: 430px;
+  position: relative;
+
+  .input-text + .input-text {
+    margin-top: 26px;
+  }
+
+  @media (max-width: $desktop) {
+    width: 442px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 270px;
+
+    .close-button__icon {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+
+.login-form::before {
+  content: "";
+  display: block;
+  height: 138px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  background-image: url("../img/backgrounds/login-popup-desktop.jpg");
+  margin-bottom: 49px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/login-popup-desktop@2x.jpg");
+  }
+
+  @media (max-width: $desktop) {
+    background-image: url("../img/backgrounds/login-popup-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/login-popup-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $tablet) {
+    height: 84px;
+    background-image: url("../img/backgrounds/login-popup-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/login-popup-mobile@2x.jpg");
+    }
+  }
+}
+
+.login-form__form {
+  padding-top: 0;
+  padding-right: 45px;
+  padding-bottom: 45px;
+  padding-left: 45px;
+
+  @media (max-width: $desktop) {
+    padding-right: 51px;
+    padding-bottom: 54px;
+    padding-left: 51px;
+  }
+
+  @media (max-width: $desktop) {
+    padding-right: 15px;
+    padding-bottom: 39px;
+    padding-left: 15px;
+  }
+}
+
+.login-form__submit-button {
+  margin-top: 68px;
+  margin-bottom: 15px;
+}
+
+.login-form__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--login-form__text-color);
+}
+
+.login-form__sign-up-link {
+  padding-left: 5px;
+}
+
+.login-form__close-button {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+.login-form__title {
+  margin-bottom: 25px;
+}

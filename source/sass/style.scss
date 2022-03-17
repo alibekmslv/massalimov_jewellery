@@ -9,6 +9,7 @@
 @import "./base/utils";
 
 // Components
+@import "./components/close-button";
 @import "./components/site-navigation";
 @import "./components/header-functional-links";
 @import "./components/search-field";
@@ -32,6 +33,8 @@
 @import "./components/checkbox";
 @import "./components/range-filter";
 @import "./components/filter-form";
+@import "./components/login-form";
+@import "./components/input-text";
 
 //Layout
 @import "./layout/site-header";
@@ -41,6 +44,7 @@
 @import "./layout/section-faq";
 @import "./layout/section-ig-masonry";
 @import "./layout/_section-catalog";
+@import "./layout/modal";
 
 //State
 @import "./state/no-js";

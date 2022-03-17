@@ -71,6 +71,18 @@ $westar-23: #dbd5d03d;
   --range-filter__toggle-bgc-before: #{$muesli};
   --range-filter__toggle-bgc-before-hover: #{darken($muesli, 10)};
   --filter-form--open-box-shadow: #{$westar-23};
+  --login-form-bgc: #{$pearl-bush};
+  --input-text-border-color: #{$zeus};
+  --input-text-input-color: #{$zeus};
+  --input-text-input-color-placeholder: #{$dawn};
+  --input-text-input-color-placeholder-hover: #{darken($dawn, 10)};
+  --input-text__additional-text: #{$dawn};
+  --login-form__text-color: #{$dawn};
+  --close-button-fill: #{$zeus};
+  --close-button-fill-hover: #{$muesli};
+  --close-button--round-fill: #{$white};
+  --close-button--round-fill-hover: #{$muesli};
+  --close-button--round-bgc: #{$zeus};
 }
 
 [data-color-mode="dark"][data-dark-theme="dark"],
@@ -97,6 +109,10 @@ $westar-23: #dbd5d03d;
   --checkbox__icon-color: #{$desert-storm};
   --checkbox__icon-color-hover: #{$pearl-bush};
   --range-filter__toggle-bgc-before-hover: #{$desert-storm};
+  --input-text-border-color: #{$white};
+  --close-button-fill: #{$white};
+  --close-button--round-fill: #{$zeus};
+  --close-button--round-bgc: #{$white};
 }
 
 [data-color-mode="dark"][data-dark-theme="dark"] {
