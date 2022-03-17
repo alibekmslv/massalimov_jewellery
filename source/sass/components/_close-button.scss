@@ -1,0 +1,37 @@
+.close-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    .close-button__icon {
+      transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+      transition-property: fill;
+      fill: var(--close-button--round-fill-hover);
+    }
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: var(--button-box-shadow);
+  }
+}
+
+.close-button--round {
+  background-color: var(--close-button--round-bgc);
+  border-radius: 50%;
+
+  .close-button__icon {
+    fill: var(--close-button--round-fill);
+  }
+}
+
+.close-button__icon {
+  fill: var(--close-button-fill);
+}
