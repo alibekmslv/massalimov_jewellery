@@ -14,3 +14,14 @@ body {
 a {
   text-decoration: none;
 }
+
+.hr-full-width {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: none;
+  background-color: var(--hr-full-width-bg-color);
+  height: 1px;
+}

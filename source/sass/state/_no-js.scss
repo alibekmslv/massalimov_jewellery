@@ -35,6 +35,18 @@
     .header-functional-links__icon {
       stroke: $header-functional-links__icon-stroke--open;
     }
+
+    .accordion__body {
+      display: block;
+    }
+
+    .filter-form__form {
+      display: block;
+    }
+
+    .filter-form__open-button {
+      display: none;
+    }
   }
 
   .slider__controls {

@@ -21,12 +21,17 @@
 @import "./components/list";
 @import "./components/input-group";
 @import "./components/form-control";
-@import "./components/main-banner";
+// @import "./components/main-banner";
 @import "./components/product-card";
 @import "./components/slider";
 @import "./components/pagination";
 @import "./components/accordion";
 @import "./components/gallery-masonry.scss";
+@import "./components/page-banner";
+@import "./components/catalog-list";
+@import "./components/checkbox";
+@import "./components/range-filter";
+@import "./components/filter-form";
 
 //Layout
 @import "./layout/site-header";
@@ -35,6 +40,7 @@
 @import "./layout/blog-masonry";
 @import "./layout/section-faq";
 @import "./layout/section-ig-masonry";
+@import "./layout/_section-catalog";
 
 //State
 @import "./state/no-js";
