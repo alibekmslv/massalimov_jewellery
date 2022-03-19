@@ -24,8 +24,8 @@
         <div class="site-header__inner-layout">
           <form class="search-field site-header__search-field" action="#" method="GET">
             <label for="search" class="visually-hidden">Search</label>
-            <input class="search-field__input" id="search" type="search" placeholder="Type here to search"
-              name="search" />
+            <input id="search" type="search" placeholder="Type here to search"
+              name="search">
             <svg class="search-field__icon" width="14" height="14" aria-hidden="true">
               <use class="search-field__icon-use" xlink:href="img/sprite_auto.svg#icon-magnifying-glass"></use>
             </svg>
@@ -35,48 +35,50 @@
               <use class="logo__image-use" xlink:href="img/logo.svg#logo"></use>
             </svg>
           </a>
+          <hr class="hr-full-width show-on-desktop site-header__hr-full-width">
           <nav class="site-navigation site-header__site-navigation">
-            <ul class="site-navigation__list">
+            <ul class="site-navigation__list list">
               <li class="site-navigation__item">
-                <a class="site-navigation__link" href="/catalog.html">What's new</a>
+                <a class="link link--primary" href="/catalog.html">What's new</a>
               </li>
               <li class="site-navigation__item">
-                <a class="site-navigation__link" href="#">Chockers</a>
+                <a class="link link--primary" href="#">Chockers</a>
               </li>
               <li class="site-navigation__item">
-                <a class="site-navigation__link" href="#">Necklaces</a>
+                <a class="link link--primary" href="#">Necklaces</a>
               </li>
               <li class="site-navigation__item">
-                <a class="site-navigation__link" href="#">Rings</a>
+                <a class="link link--primary" href="#">Rings</a>
               </li>
               <li class="site-navigation__item">
-                <a class="site-navigation__link" href="#">Earrings</a>
-              </li>
-            </ul>
-            <ul class="site-navigation__list site-navigation__list--secondary-menu">
-              <li class="site-navigation__item">
-                <a class="site-navigation__link" href="#">About CH</a>
-              </li>
-              <li class="site-navigation__item">
-                <a class="site-navigation__link" href="#">Stores & Hours</a>
-              </li>
-              <li class="site-navigation__item">
-                <a class="site-navigation__link" href="#">Contact Us</a>
+                <a class="link link--primary" href="#">Earrings</a>
               </li>
             </ul>
-            <a class="site-navigation__button login-popup-trigger" href="/login.html">Login</a>
+            <ul class="site-navigation__list list site-navigation__list--secondary-menu">
+              <li class="site-navigation__item">
+                <a class="link" href="#">About CH</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="link" href="#">Stores & Hours</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <a class="site-navigation__login-link link login-popup-trigger" href="/login.html">Login</a>
           </nav>
-          <ul class="header-functional-links site-header__header-functional-links">
-            <li class="header-functional-links__item site-header__functional-link-login">
-              <a class="header-functional-links__button login-popup-trigger" href="/login.html">Login</a>
+          <ul class="app-control site-header__app-control list">
+            <li class="show-on-desktop">
+              <a class="button button--invisible login-popup-trigger" href="/login.html">Login</a>
             </li>
-            <li class="header-functional-links__item">
-              <a class="header-functional-links__button" href="#">
-                <svg class="header-functional-links__icon" width="20" height="18" aria-hidden="true">
+            <li>
+              <a class="button button--invisible" href="#">
+                <svg class="app-control__cart-icon" width="20" height="18" aria-hidden="true">
                   <use xlink:href="img/sprite_auto.svg#icon-shopping-bag"></use>
                 </svg>
                 <span class="show-on-desktop">Cart </span>
-                <span class="header-functional-links__cart-count show-on-desktop">0</span></a>
+                <span class="cart-count show-on-desktop">0</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -94,12 +96,12 @@
         <h2 class="title title--second text-capitalize text-center">New in</h2>
         <div class="slider">
           <div class="slider__controls d-flex flex-justify-between">
-            <button class="button button--invisible slider__button">
+            <button class="button button--invisible slider__button slider__button--prev">
               <svg class="button__icon" width="30" height="11" aria-hidden="true">
                 <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
               </svg>
             </button>
-            <button class="button button--invisible slider__button">
+            <button class="button button--invisible slider__button slider__button--next">
               <svg class="button__icon" width="30" height="11" aria-hidden="true">
                 <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
               </svg>
@@ -421,8 +423,9 @@
       </section>
       <section class="section-faq container">
         <h2 class="title title--second text-center section-faq__title">Frequently asked questions</h2>
-        <div class="accordion section-faq__accordion">
-          <div class="accordion__item accordion__item--open">
+        <div class="accordion section-faq__accordion faq-accordion-trigger">
+          <!-- accordion__item--open -->
+          <div class="accordion__item">
             <p class="accordion__header">What materials are the&nbsp;jewellery&nbsp;made&nbsp;of?</p>
             <p class="accordion__body">
               Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and<br class="show-on-desktop"> crystals.
@@ -542,16 +545,17 @@
           <h2 class="title title--second">The good stuff <br class="show-on-mobile">in&nbsp;your&nbsp;inbox </h2>
           <p class="subtitle subtitle--subtle">News and updates from CH. <br
               class="show-on-mobile">No&nbsp;spam,&nbsp;we&nbsp;promise.</p>
-          <form class="site-footer__form input-group" action="#">
-            <label class="visually-hidden" for="email">Your E-mail</label>
-            <input class="form-control form-control--block" type="email" name="email" placeholder="Your E-mail"
-              id="email" />
-            <button class="button button--invisible input-group__button" type="submit">
-              <span>Sign Up</span>
-              <svg class="button__icon" width="30" height="11" aria-hidden="true">
-                <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
-              </svg>
-            </button>
+          <form class="site-footer__form" action="#">
+            <div class="input-text input-text--flex">
+              <label class="visually-hidden" for="subscirbe-email">Your E-mail</label>
+              <input type="email" name="subscribe-email" placeholder="Your E-mail" id="subscirbe-email">
+              <button class="button button--invisible" type="submit">
+                <span>Sign Up</span>
+                <svg class="button__icon" width="30" height="11" aria-hidden="true">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
         <ul class="site-footer__list site-footer__list--site-links list">
@@ -641,7 +645,8 @@
         </button>
       </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/script.js" defer></script>
   </body>
 
   </html>

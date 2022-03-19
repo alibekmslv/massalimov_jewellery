@@ -1,0 +1,25 @@
+.app-control {
+  display: flex;
+  column-gap: 35px;
+
+  .button {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.app-control__cart-icon {
+  fill: transparent;
+  display: none;
+
+  @media (max-width: $desktop) {
+    display: block;
+    stroke: currentColor;
+  }
+}
+
+.app-control {
+  .cart-count {
+    padding-left: 5px;
+  }
+}

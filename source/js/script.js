@@ -15,10 +15,15 @@ var isMenuOpen = false;
 // Login modal related vars
 var loginPopupTriggers = document.querySelectorAll('.login-popup-trigger');
 var modalElement = document.querySelector('.modal');
+
 if (modalElement) {
   var closeModalButtonElement = modalElement.querySelector('.close-button');
   var loginEmailInputElement = modalElement.querySelector('input[name="login-email"]');
 }
+
+// Accordion related vars
+var sectionFaqAccordionElement = document.querySelector('.faq-accordion-trigger');
+var filterFormAccordionElement = document.querySelector('.filter-form-accordion-trigger');
 
 function openMenu() {
   siteHeaderElement.classList.add('site-header--open');
@@ -99,3 +104,42 @@ if (loginPopupTriggers && modalElement) {
     item.addEventListener('click', openLoginModalHandler);
   });
 }
+
+// Accordion
+var Accordion = function (accordionElement, isAccordionHeaderClickable) {
+  this.accordionElement = accordionElement;
+  this.isAccordionHeaderClickable = isAccordionHeaderClickable;
+  this.accordionItemElements = null;
+};
+
+Accordion.prototype.accordionElementHandler = function (item) {
+  return function () {
+    item.classList.toggle('accordion__item--open');
+  };
+};
+
+Accordion.prototype.init = function () {
+  if (this.accordionElement) {
+    this.accordionItemElements = this.accordionElement.querySelectorAll('.accordion__item');
+
+    if (this.accordionItemElements) {
+      this.accordionItemElements.forEach(function (item) {
+        var accordionButtonElement = item.querySelector('.accordion__button');
+        var accordionHeaderElement = item.querySelector('.accordion__header');
+
+        if (accordionButtonElement) {
+          accordionButtonElement.addEventListener('click', this.accordionElementHandler(item));
+        }
+
+        if (this.isAccordionHeaderClickable && accordionHeaderElement) {
+          accordionHeaderElement.addEventListener('click', this.accordionElementHandler(item));
+        }
+      }.bind(this));
+    }
+  }
+};
+
+var faqAccordion = new Accordion(sectionFaqAccordionElement, true);
+faqAccordion.init();
+var filterFormAccordion = new Accordion(filterFormAccordionElement, true);
+filterFormAccordion.init();

@@ -43,6 +43,21 @@
   }
 }
 
+
+.input-text--flex {
+  display: flex;
+
+  input {
+    display: block;
+    width: 100%;
+  }
+
+  .button {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .input-text__additional-text {
   position: absolute;
   font-weight: 500;
