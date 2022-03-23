@@ -58,12 +58,41 @@
   }
 }
 
-.input-text__additional-text {
+.input-text {
+  .input-text__additional-text {
+    position: absolute;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    right: 0;
+    bottom: -20px;
+    color: var(--input-text__additional-text-color);
+  }
+}
+
+.input-text__validation {
+  display: none;
   position: absolute;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  right: 0;
+  left: 0;
   bottom: -20px;
-  color: var(--input-text__additional-text);
+}
+
+.input-text__validation--invalid {
+  color: var(--input-text__validator-text-color);
+}
+
+.input-text--invalid {
+  input {
+    &:focus {
+      outline: none;
+      box-shadow: var(--outline-invalid-box-shadow);
+    }
+  }
+
+  .input-text__validation {
+    display: block;
+  }
 }

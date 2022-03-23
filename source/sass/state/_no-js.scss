@@ -1,5 +1,8 @@
 .no-js {
   @media (max-width: $desktop) {
+    .site-header {
+      margin-bottom: 10px;
+    }
     .site-header__wrapper {
       background-color: $site-header__wrapper-bgc--open;
     }
@@ -56,4 +59,6 @@
   .slider__pagination {
     display: none;
   }
+
+
 }

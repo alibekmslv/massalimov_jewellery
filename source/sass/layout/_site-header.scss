@@ -4,6 +4,11 @@
 
 .site-header--open {
   @media (max-width: $desktop) {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+
     .site-header__wrapper {
       background-color: $site-header__wrapper-bgc--open;
     }

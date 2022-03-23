@@ -18,9 +18,10 @@
 
 .filter-form__form--open {
   @media (max-width: $desktop) {
+    z-index: 20;
     display: block;
     padding-bottom: 40px;
-    position: fixed;
+    position: absolute;
     top: 27px;
     left: 0;
     width: 442px;

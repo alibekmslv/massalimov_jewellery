@@ -24,8 +24,7 @@
         <div class="site-header__inner-layout">
           <form class="search-field site-header__search-field" action="#" method="GET">
             <label for="search" class="visually-hidden">Search</label>
-            <input id="search" type="search" placeholder="Type here to search"
-              name="search">
+            <input id="search" type="search" placeholder="Type here to search" name="search">
             <svg class="search-field__icon" width="14" height="14" aria-hidden="true">
               <use class="search-field__icon-use" xlink:href="img/sprite_auto.svg#icon-magnifying-glass"></use>
             </svg>
@@ -548,7 +547,8 @@
           <form class="site-footer__form" action="#">
             <div class="input-text input-text--flex">
               <label class="visually-hidden" for="subscirbe-email">Your E-mail</label>
-              <input type="email" name="subscribe-email" placeholder="Your E-mail" id="subscirbe-email">
+              <input type="email" name="subscribe-email" placeholder="Your E-mail" id="subscirbe-email" autocomplete="off" required>
+              <span class="input-text__validation input-text__validation--invalid">Provide valid email</span>
               <button class="button button--invisible" type="submit">
                 <span>Sign Up</span>
                 <svg class="button__icon" width="30" height="11" aria-hidden="true">
@@ -628,15 +628,18 @@
         <form action="#" class="login-form__form">
           <div class="input-text input-text--block">
             <label class="visually-hidden" for="login-email">E-mail</label>
-            <input type="email" name="login-email" placeholder="Your E-mail" id="login-email" />
+            <input type="email" name="login-email" placeholder="Your E-mail" id="login-email" autocomplete="off" required />
+            <span class="input-text__validation input-text__validation--invalid">Please provide valid email</span>
           </div>
           <div class="input-text input-text--block">
             <label class="visually-hidden" for="password">Password</label>
-            <input type="password" name="password" placeholder="Password" id="password" />
+            <input type="password" name="password" placeholder="Password" id="password" required />
             <a class="input-text__additional-text link" href="#">Forgot your password?</a>
           </div>
-          <button class="button button--primary button--large button--block login-form__submit-button" type="submit">Login</button>
-          <p class="login-form__text text-center">Don’t have an account?<a class="login-form__sign-up-link link link--primary" href="#">Sign up</a></p>
+          <button class="button button--primary button--large button--block login-form__submit-button"
+            type="submit">Login</button>
+          <p class="login-form__text text-center">Don’t have an account?<a
+              class="login-form__sign-up-link link link--primary" href="#">Sign up</a></p>
         </form>
         <button class="login-form__close-button close-button" type="reset">
           <svg class="close-button__icon" width="20" height="20">
@@ -645,7 +648,6 @@
         </button>
       </div>
     </div>
-    <script src="js/vendor.js"></script>
     <script src="js/script.js" defer></script>
   </body>
 
