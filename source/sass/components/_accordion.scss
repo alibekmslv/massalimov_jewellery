@@ -1,20 +1,37 @@
 .accordion {
   color: var(--text-default-color);
-  margin-bottom: 40px;
 }
 
 .accordion--filter {
   .accordion__item {
     padding-top: 23px;
-    padding-right: 23px;
-    padding-bottom: 27px;
+    padding-right: 16px;
+    padding-bottom: 22px;
     padding-left: 24px;
+
+    @media (max-width: $desktop) {
+      padding-top: 35px;
+      padding-right: 32px;
+      padding-bottom: 33px;
+      padding-left: 22px;
+    }
+
+    @media (max-width: $tablet) {
+      padding-top: 25px;
+      padding-right: 10px;
+      padding-bottom: 23px;
+    }
   }
 
   .accordion__header {
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
+
+    @media (max-width: $desktop) {
+      font-size: 18px;
+      line-height: 23px;
+    }
   }
 
   .accordion__body {
@@ -23,14 +40,46 @@
     line-height: 18px;
     padding-left: 10px;
     grid-column: 1 / -1;
+    margin-top: 16px;
+    margin-bottom: 5px;
+
+    @media (max-width: $desktop) {
+      padding-left: 9px;
+      margin-top: 15px;
+    }
   }
 
   .accordion__body--range-filter {
     padding-left: 0;
+
+    @media (max-width: $desktop) {
+      margin-top: 21px;
+    }
   }
 
   .accordion__button {
     grid-row: 1 / 2;
+
+    @media (max-width: $tablet) {
+      position: relative;
+      top: 2px;
+    }
+  }
+
+  @media (max-width: $desktop) {
+    .checkbox {
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    .checkbox + .checkbox {
+      margin-top: 17px;
+    }
+
+    .checkbox__icon {
+      width: 18px;
+      height: 18px;
+    }
   }
 }
 
@@ -42,15 +91,27 @@
   grid-auto-flow: dense;
   column-gap: 10px;
   row-gap: 7px;
-  padding: 44px 49px 43px 42px;
+  padding-top: 44px;
+  padding-right: 44px;
+  padding-bottom: 42px;
+  padding-left: 42px;
   border-width: 1px;
   border-style: solid;
   border-color: var(--primary-color);
   border-bottom-width: 0;
 
+  @media (max-width: $desktop) {
+    padding-top: 44px;
+    padding-bottom: 44px;
+    padding-left: 48px;
+  }
+
   @media (max-width: $tablet) {
     grid-template-columns: 1fr min-content;
-    padding: 22px 15px 24px 24px;
+    padding-top: 17px;
+    padding-right: 15px;
+    padding-bottom: 18px;
+    padding-left: 24px;
   }
 }
 
@@ -94,8 +155,14 @@
   max-width: 530px;
   grid-column: 1 / 2;
 
-  @media (max-width: $tablet) {
+  @media (max-width: $desktop) {
+    margin-top: 18px;
     padding-left: 0;
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: 8px;
+    margin-bottom: 2px;
     font-size: 14px;
     line-height: 20px;
   }
@@ -131,8 +198,9 @@
   }
 
   @media (max-width: $tablet) {
-    top: 15px;
-    right: 15px;
+    position: relative;
+    top: -8px;
+    right: 3px;
 
     .accordion__icon {
       width: 22px;

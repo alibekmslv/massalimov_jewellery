@@ -34,6 +34,12 @@
   }
 }
 
+.hide-on-mobile {
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
 .d-flex {
   display: flex;
 }

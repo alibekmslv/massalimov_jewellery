@@ -1,5 +1,13 @@
 .section-catalog {
-  margin-bottom: 75px;
+  padding-bottom: 75px;
+
+  .section-catalog__catalog-list {
+    margin-bottom: 14px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-bottom: 65px;
+  }
 }
 
 .section-catalog__wrapper {
@@ -19,4 +27,8 @@
 
 .section-catalog__pagination {
   margin-top: 51px;
+
+  @media (max-width: $tablet) {
+    margin-top: 21px;
+  }
 }

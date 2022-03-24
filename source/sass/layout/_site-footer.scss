@@ -9,7 +9,7 @@
   }
 
   @media (max-width: $tablet) {
-    padding-bottom: 60px;
+    padding-bottom: 56px;
   }
 }
 
@@ -36,6 +36,15 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
+  margin-top: 6px;
+
+  @media (max-width: $desktop) {
+    margin-top: 2px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: 0;
+  }
 }
 
 .site-footer__list--icons {
@@ -53,7 +62,7 @@
 }
 
 .site-footer__list--site-links + .site-footer__list--site-links {
-  margin-left: 70px;
+  margin-left: 72px;
 
   @media (max-width: $desktop) {
     margin-left: 0;
@@ -72,5 +81,5 @@
 }
 
 .site-footer__form {
-  margin-top: 34px;
+  margin-top: 33px;
 }

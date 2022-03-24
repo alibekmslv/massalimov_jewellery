@@ -5,6 +5,19 @@
 
 .pagination--pages {
   justify-content: space-between;
+
+  .pagination__numbers {
+    margin-left: -36px;
+  }
+
+  @media (max-width: $tablet) {
+    justify-content: center;
+
+    .pagination__numbers {
+      margin-left: 0;
+      column-gap: 23px;
+    }
+  }
 }
 
 .pagination .link {
@@ -19,9 +32,8 @@
 }
 
 .pagination__numbers {
-  .link + .link {
-    margin-left: 12px;
-  }
+  display: flex;
+  column-gap: 12px;
 }
 
 // .pagination__link {

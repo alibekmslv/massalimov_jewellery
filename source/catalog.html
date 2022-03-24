@@ -41,7 +41,7 @@
               <a class="link link--primary" href="/catalog.html">What's new</a>
             </li>
             <li class="site-navigation__item">
-              <a class="link link--primary" href="#">Chockers</a>
+              <a class="link link--primary" href="#">Chokers</a>
             </li>
             <li class="site-navigation__item">
               <a class="link link--primary" href="#">Necklaces</a>
@@ -71,7 +71,7 @@
             <a class="button button--invisible login-popup-trigger" href="/login.html">Login</a>
           </li>
           <li>
-            <a class="button button--invisible" href="#">
+            <a class="button button--invisible app-control__cart-button" href="#">
               <svg class="app-control__cart-icon" width="20" height="18" aria-hidden="true">
                 <use xlink:href="img/sprite_auto.svg#icon-shopping-bag"></use>
               </svg>
@@ -93,7 +93,7 @@
     </div>
     <section class="section-catalog container">
       <div class="section-catalog__wrapper">
-        <div class="section-catolog__filter-form filter-form">
+        <div class="section-catalog__filter-form filter-form">
           <h2 class="visually-hidden">Products Filter</h2>
           <button class="button button--primary button--large button--block filter-form__open-button">Filter</button>
           <!-- filter-form__form--open -->
@@ -104,7 +104,7 @@
                 <use xlink:href="img/sprite_auto.svg#icon-close-cross"></use>
               </svg>
             </button>
-            <div class="accordion accordion--filter filter-form-accordion-trigger">
+            <div class="accordion accordion--filter filter-form__accordion filter-form-accordion-trigger">
               <!-- accordion__item--open -->
               <fieldset class="accordion__item accordion__item--open">
                 <h3 class="accordion__header">Product</h3>
@@ -206,12 +206,12 @@
                   <div class="range-filter">
                     <div class="range-filter__controls">
                       <div class="range-filter__scale">
-                        <div class="range-filter__bar" style="width: 30%; margin-left: 30%"></div>
-                        <button class="range-filter__toggle range-filter__toggle--min" type="button" style="left: 30%"
+                        <div class="range-filter__bar" style="width: 48%; margin-left: 27%"></div>
+                        <button class="range-filter__toggle range-filter__toggle--min" type="button" style="left: 18%"
                           aria-label="Range button from">
                           <span>$&nbsp;<span>55</span></span></button>
                         <button class="range-filter__toggle range-filter__toggle--max" type="button"
-                          style="left: calc(89% - 20px)"
+                          style="left: calc(77% - 20px)"
                           aria-label="Range button to"><span>$&nbsp;<span>155</span></span></button>
                       </div>
                     </div>
@@ -238,7 +238,7 @@
           </form>
         </div>
         <div class="section-catalog__products">
-          <ul class="catalog-list list">
+          <ul class="catalog-list list section-catalog__catalog-list">
             <li class="catalog-list__item">
               <a class="product-card" href="#">
                 <picture>
@@ -373,10 +373,10 @@
                   <source media="(max-width: 1023px)"
                     srcset="img/products/product-07-tablet.jpg 1x, img/products/product-07-tablet@2x.jpg 2x">
                   <img class="product-card__image" width="270" height="272" src="img/products/product-07-desktop.jpg"
-                    srcset="img/products/product-07-desktop@2x.jpg 2x" alt="Picture of Necklace with amethyst">
+                    srcset="img/products/product-07-desktop@2x.jpg 2x" alt="Picture of Black leather choker">
                 </picture>
-                <h3 class="product-card__title">Necklace with amethyst</h3>
-                <p class="product-card__price">$ 135</p>
+                <h3 class="product-card__title">Black leather choker</h3>
+                <p class="product-card__price">$ 85</p>
               </a>
             </li>
             <li class="catalog-list__item">
@@ -482,7 +482,7 @@
           </ul>
           <hr class="hr-full-width">
           <div class="pagination pagination--pages section-catalog__pagination" aria-label="Pagination">
-            <a class="link link--primary" href="#">Previous</a>
+            <a class="link link--primary hide-on-mobile" href="#">Previous</a>
             <div class="pagination__numbers">
               <a class="link link--primary" href="#" aria-label="Page 1">1</a>
               <a class="link link--secondary" href="#" aria-label="Page 2">2</a>
@@ -490,7 +490,7 @@
               <a class="link link--secondary" href="#" aria-label="Page 3">4</a>
               <a class="link link--secondary" href="#" aria-label="Page 3">5</a>
             </div>
-            <a class="link link--primary" href="#">Next</a>
+            <a class="link link--primary hide-on-mobile" href="#">Next</a>
           </div>
         </div>
       </div>

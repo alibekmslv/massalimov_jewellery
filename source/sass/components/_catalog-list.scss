@@ -2,8 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 30px;
-  row-gap: 19px;
-  margin-bottom: 19px;
+  row-gap: 15px;
 
   .product-card {
     width: 100%;
@@ -12,5 +11,6 @@
 
   @media (max-width: $tablet) {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 5px;
   }
 }

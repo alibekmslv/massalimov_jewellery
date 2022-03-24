@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="E-commerce Jewellery store.">
     <title>Jewellery</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link href="fonts/cormorant-garamond-bold.woff2" as="font" rel="preload" crossorigin="anonymous">
+    <link href="fonts/poppins-regular.woff2" as="font" rel="preload" crossorigin="anonymous">
+    <link href="fonts/poppins-bold.woff2" as="font" rel="preload" crossorigin="anonymous">
   </head>
 
   <body class="page-body no-js">
@@ -41,7 +45,7 @@
                 <a class="link link--primary" href="/catalog.html">What's new</a>
               </li>
               <li class="site-navigation__item">
-                <a class="link link--primary" href="#">Chockers</a>
+                <a class="link link--primary" href="#">Chokers</a>
               </li>
               <li class="site-navigation__item">
                 <a class="link link--primary" href="#">Necklaces</a>
@@ -71,7 +75,7 @@
               <a class="button button--invisible login-popup-trigger" href="/login.html">Login</a>
             </li>
             <li>
-              <a class="button button--invisible" href="#">
+              <a class="button button--invisible app-control__cart-button" href="#">
                 <svg class="app-control__cart-icon" width="20" height="18" aria-hidden="true">
                   <use xlink:href="img/sprite_auto.svg#icon-shopping-bag"></use>
                 </svg>
@@ -91,17 +95,17 @@
           <p class="subtitle subtitle--italic text-lower">Made to be yours</p>
         </div>
       </div>
-      <section class="new-in container">
-        <h2 class="title title--second text-capitalize text-center">New in</h2>
+      <section class="section-new container">
+        <h2 class="title title--second text-capitalize text-center section-new__title">New in</h2>
         <div class="slider">
           <div class="slider__controls d-flex flex-justify-between">
-            <button class="button button--invisible slider__button slider__button--prev">
-              <svg class="button__icon" width="30" height="11" aria-hidden="true">
+            <button class="button button--invisible slider__button slider__button--prev" type="button" aria-label="Previous Slide">
+              <svg class="button__icon button__icon--primary" width="30" height="11" aria-hidden="true">
                 <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
               </svg>
             </button>
-            <button class="button button--invisible slider__button slider__button--next">
-              <svg class="button__icon" width="30" height="11" aria-hidden="true">
+            <button class="button button--invisible slider__button slider__button--next" type="button" aria-label="Next Slide">
+              <svg class="button__icon button__icon--primary" width="30" height="11" aria-hidden="true">
                 <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
               </svg>
             </button>
@@ -351,10 +355,10 @@
       </section>
       <section class="section-blog container">
         <div class="text-center">
-          <h2 class="title title--second">Blog</h2>
+          <h2 class="title title--second section-blog__title">Blog</h2>
           <a class="link link--primary link--underline text-capitalize text-center" href="#">Read All</a>
         </div>
-        <ul class="blog-masonry list" data-color-mode="light" data-light-theme="light">
+        <ul class="blog-masonry list section-blog__blog-masonry" data-color-mode="light" data-light-theme="light">
           <li class="blog-masonry__item">
             <picture class="blog-masonry__img-thumb-wide">
               <source type="image/webp" srcset="img/blog/blog-1-masonry-wide-desktop.webp 1x, img/blog/blog-1-masonry-wide-desktop@2x.webp 2x">
@@ -424,7 +428,7 @@
         <h2 class="title title--second text-center section-faq__title">Frequently asked questions</h2>
         <div class="accordion section-faq__accordion faq-accordion-trigger">
           <!-- accordion__item--open -->
-          <div class="accordion__item">
+          <div class="accordion__item accordion__item--open">
             <p class="accordion__header">What materials are the&nbsp;jewellery&nbsp;made&nbsp;of?</p>
             <p class="accordion__body">
               Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and<br class="show-on-desktop"> crystals.
@@ -447,7 +451,7 @@
             </button>
           </div>
           <div class="accordion__item">
-            <p class="accordion__header">What are the&nbsp;payment&nbsp;methods?</p>
+            <p class="accordion__header">What are the payment&nbsp;methods?</p>
             <p class="accordion__body">
               Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.
             </p>

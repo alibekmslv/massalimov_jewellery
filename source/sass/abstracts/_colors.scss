@@ -48,6 +48,8 @@ $westar-23: #dbd5d03d;
   --button--ouline-border-color-hover: #{darken($muesli, 10)};
   --button--invisible-color: #{$zeus};
   --button--invisible-color-hover: #{$muesli};
+  --button__icon--primary-stroke: #{$muesli};
+  --button__icon--primary-stroke-hover: #{darken($muesli, 10)};
   --title-color: #{$zeus};
   --subtitle-color: #{$zeus};
   --subtitle--subtle-color: #{lighten($black, 30)};

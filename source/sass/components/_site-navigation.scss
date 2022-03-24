@@ -46,6 +46,11 @@
       opacity: 0.75;
     }
   }
+
+  @media (max-width: $tablet) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .site-navigation__login-link {
