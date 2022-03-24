@@ -57,7 +57,34 @@
     display: none;
   }
 
-  .slider__pagination {
-    display: none;
+  // .slider__pagination {
+  //   display: none;
+  // }
+
+  .splide {
+    visibility: visible;
+  }
+
+  .splide__list {
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+
+  .splide__slide {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+
+    &:nth-child(n + 5) {
+      display: none;
+    }
+
+    @media (max-width: $desktop) {
+      flex-basis: calc((100% / 2) - 30px);
+
+      &:nth-child(n + 3) {
+        display: none;
+      }
+    }
   }
 }

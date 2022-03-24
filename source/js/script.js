@@ -273,3 +273,56 @@ subscribeEmailValidator.init();
 
 var loginFormValidator = new Validator(loginEmailElement, loginFormElement);
 loginFormValidator.init();
+
+// eslint-disable-next-line no-undef
+var splide = new Splide('.splide', {
+  type: 'slide',
+  width: '1170px',
+  perPage: 4,
+  perMove: 4,
+  drag: false,
+  gap: '30px',
+  classes: {
+    pagination: 'splide__pagination list slider__pagination',
+    page: 'splide__pagination__page link',
+  },
+  breakpoints: {
+    1230: {
+      width: '900px',
+      perPage: 3,
+      perMove: 3,
+    },
+    1023: {
+      width: '678px',
+      perPage: 2,
+      perMove: 2,
+      drag: true,
+      flickPower: 1000,
+    },
+    767: {
+      width: '290px',
+      perPage: 2,
+      perMove: 2,
+      drag: true,
+    }
+  }
+});
+
+splide.on('pagination:mounted', function (data) {
+  data.items.forEach(function (item) {
+    item.button.textContent = String(item.page + 1);
+    item.button.setAttribute('data-page-counter', String(item.page + 1));
+    item.li.classList.add('slider__page');
+  });
+});
+
+splide.on('pagination:updated', function (data, item) {
+  var lWidth = window.screen.width;
+
+  if (lWidth <= 767) {
+    item.button.textContent = String(item.page + 1);
+  }
+});
+
+
+splide.mount();

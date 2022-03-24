@@ -54,6 +54,16 @@
   .subtitle {
     margin-top: -7px;
   }
+
+  .page-banner__content {
+    @media (max-width: $desktop) {
+      margin-right: 17px;
+    }
+
+    @media (max-width: $tablet) {
+      margin-right: 0;
+    }
+  }
 }
 
 .page-banner--catalog {

@@ -5,6 +5,7 @@
 
   @media (max-width: $desktop) {
     padding: 0 45px;
+    max-width: none;
   }
 
   @media (max-width: $tablet) {
