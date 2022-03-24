@@ -5,7 +5,7 @@
     }
 
     .site-header__wrapper {
-      background-color: $site-header__wrapper-bgc--open;
+      background-color: var(--site-header__wrapper-bgc--open);
     }
 
     .site-header__menu-button {
@@ -29,7 +29,7 @@
     }
 
     .site-navigation__link {
-      color: $site-navigation__link-color--open;
+      color: var(--site-navigation__list-link--open-color);
     }
 
     .logo__image {
@@ -37,7 +37,7 @@
     }
 
     .app-control__cart-icon {
-      stroke: $header-functional-links__icon-stroke--open;
+      stroke: var(--app-control__cart-icon--open);
     }
 
     .accordion__body {
@@ -56,10 +56,6 @@
   .slider__controls {
     display: none;
   }
-
-  // .slider__pagination {
-  //   display: none;
-  // }
 
   .splide {
     visibility: visible;

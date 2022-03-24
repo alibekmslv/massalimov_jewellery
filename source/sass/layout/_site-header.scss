@@ -10,7 +10,7 @@
     z-index: 20;
 
     .site-header__wrapper {
-      background-color: $site-header__wrapper-bgc--open;
+      background-color: var(--site-header__wrapper-bgc--open);
     }
   }
 }
@@ -59,16 +59,12 @@
       margin-bottom: 71px;
     }
 
-    .site-navigation__link {
-      color: $site-navigation__link-color--open;
-    }
-
     .logo__image {
       fill: $white;
     }
 
     .app-control__cart-icon {
-      stroke: $header-functional-links__icon-stroke--open;
+      stroke: var(--app-control__cart-icon--open);
     }
   }
 

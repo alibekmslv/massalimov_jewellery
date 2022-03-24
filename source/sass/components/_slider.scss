@@ -25,6 +25,7 @@
 @media (max-width: $tablet) {
   .slider__page .link {
     display: none;
+    vertical-align: baseline;
   }
 
   .slider__page .is-active {

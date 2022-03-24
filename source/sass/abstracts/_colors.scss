@@ -21,12 +21,15 @@ $westar-23: #dbd5d03d;
   --text-muted-color: #{$dawn};
   --text-muted-color-hover: #{darken($dawn, 10)};
   --primary-color: #{$muesli};
+  --logo__image-fill: var(--primary-color);
   --hr-full-width-bg-color: #{$desert-storm};
   --search-field__icon-fill: #{$black};
   --search-field__icon-fill--open: #{$white};
   --search-field-bgc--open: #{$white-15};
   --search-field__input-color--open: #{$white};
+  --site-header__wrapper-bgc--open: #{$muesli};
   --site-navigation__list-link--open-color: #{$white};
+  --app-control__cart-icon--open: #{$white};
   --menu-button__icon-stroke: #{$zeus};
   --menu-button__icon-stroke--open: #{$white};
   --site-footer-bgc: #{$white};
@@ -138,16 +141,3 @@ $westar-23: #dbd5d03d;
 [data-color-mode="light"][data-light-theme="light"] {
   background-color: $white;
 }
-
-// Colors by purpose
-$site-navigation__link-color: $zeus;
-$header-functional-links__button-color: $zeus;
-$logo__image-fill: $muesli;
-$site-header__site-navigation-before-bgc: $desert-storm;
-$site-navigation__link-color--open: $white;
-$site-header__wrapper-bgc--open: $muesli;
-$site-navigation__button-color: $white;
-$menu-button__icon-stroke: $zeus;
-$menu-button__icon-stroke--open: $white;
-$header-functional-links__icon-stroke--open: $white;
-$header-functional-links__icon-stroke: $zeus;
