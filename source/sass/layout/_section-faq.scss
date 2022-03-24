@@ -1,7 +1,18 @@
+.section-faq {
+  margin-bottom: 60px;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 22px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 14px;
+  }
+}
+
 .section-faq__accordion {
   max-width: 970px;
   margin-right: auto;
-  margin-bottom: 54px;
   margin-left: auto;
 }
 
@@ -9,6 +20,6 @@
   margin-bottom: 49px;
 
   @media (max-width: $tablet) {
-    margin-bottom: 29px;
+    margin-bottom: 28px;
   }
 }

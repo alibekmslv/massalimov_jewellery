@@ -32,6 +32,16 @@
       box-shadow: var(--outline-box-shadow);
     }
   }
+
+  .input-text__additional-text {
+    position: absolute;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    right: 0;
+    bottom: -20px;
+    color: var(--input-text__additional-text-color);
+  }
 }
 
 .input-text--block {
@@ -43,12 +53,44 @@
   }
 }
 
-.input-text__additional-text {
+
+.input-text--flex {
+  display: flex;
+
+  input {
+    display: block;
+    width: 100%;
+  }
+
+  .button {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.input-text__validation {
+  display: none;
   position: absolute;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  right: 0;
+  left: 0;
   bottom: -20px;
-  color: var(--input-text__additional-text);
+}
+
+.input-text__validation--invalid {
+  color: var(--input-text__validator-text-color);
+}
+
+.input-text--invalid {
+  input {
+    &:focus {
+      outline: none;
+      box-shadow: var(--outline-invalid-box-shadow);
+    }
+  }
+
+  .input-text__validation {
+    display: block;
+  }
 }

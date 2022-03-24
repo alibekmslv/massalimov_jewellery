@@ -4,8 +4,13 @@
 
 .site-header--open {
   @media (max-width: $desktop) {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+
     .site-header__wrapper {
-      background-color: $site-header__wrapper-bgc--open;
+      background-color: var(--site-header__wrapper-bgc--open);
     }
   }
 }
@@ -13,10 +18,15 @@
 .site-header__menu-button {
   display: none;
   position: absolute;
-  top: 55px;
+  top: 45px;
+  margin-left: -10px;
 
   @media (max-width: $desktop) {
     display: flex;
+  }
+
+  @media (max-width: $tablet) {
+    top: 28px;
   }
 }
 
@@ -26,6 +36,10 @@
   grid-template-rows: repeat(2, auto);
   padding-top: 30px;
   align-items: start;
+
+  @media (max-width: $tablet) {
+    padding-top: 20px;
+  }
 }
 
 .site-header__inner-layout--open {
@@ -41,19 +55,24 @@
 
     .site-header__site-navigation {
       display: grid;
-      margin-bottom: 75px;
-    }
-
-    .site-navigation__link {
-      color: $site-navigation__link-color--open;
+      margin-top: 45px;
+      margin-bottom: 71px;
     }
 
     .logo__image {
       fill: $white;
     }
 
-    .header-functional-links__icon {
-      stroke: $header-functional-links__icon-stroke--open;
+    .app-control__cart-icon {
+      stroke: var(--app-control__cart-icon--open);
+    }
+  }
+
+
+  @media (max-width: $tablet) {
+    .site-header__site-navigation {
+      margin-top: 36px;
+      margin-bottom: 46px;
     }
   }
 }
@@ -61,7 +80,7 @@
 .site-header__search-field {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  margin-top: 12px;
+  margin-top: 3px;
 
   @media (max-width: $desktop) {
     display: none;
@@ -83,14 +102,14 @@
   }
 }
 
-.site-header__header-functional-links {
+.site-header__app-control {
   grid-column: 3 / -1;
   grid-row: 1 / 2;
   justify-self: end;
-  margin-top: 12px;
+  margin-top: 3px;
 
   @media (max-width: $desktop) {
-    margin-top: 24px;
+    margin-top: 16px;
   }
 }
 
@@ -99,18 +118,7 @@
   grid-row: 2 / 3;
   justify-self: center;
   margin-top: 18px;
-  margin-bottom: 19px;
-
-  &::before {
-    content: "";
-    display: block;
-    width: 100vw;
-    height: 1px;
-    background-color: $site-header__site-navigation-before-bgc;
-    position: absolute;
-    bottom: 60px;
-    left: 0;
-  }
+  margin-bottom: 20px;
 
   @media (max-width: $desktop) {
     grid-column: 1 / -1;
@@ -118,10 +126,6 @@
     justify-self: auto;
     display: none;
     margin-top: 55px;
-
-    &::before {
-      display: none;
-    }
   }
 
   @media (max-width: $tablet) {
@@ -129,8 +133,6 @@
   }
 }
 
-.site-header__functional-link-login {
-  @media (max-width: $desktop) {
-    display: none;
-  }
+.site-header__hr-full-width {
+  bottom: 61px;
 }

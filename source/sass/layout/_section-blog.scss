@@ -1,0 +1,25 @@
+.section-blog {
+  padding-top: 56px;
+  margin-bottom: 120px;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 69px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 46px;
+    margin-bottom: 60px;
+  }
+}
+
+.section-blog__title {
+  margin-bottom: 20px;
+}
+
+.section-blog__blog-masonry {
+  margin-top: 64px;
+
+  @media (max-width: $tablet) {
+    margin-top: 55px;
+  }
+}

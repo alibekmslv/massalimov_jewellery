@@ -1,18 +1,24 @@
 .menu-button {
   display: flex;
   border: none;
-  padding: 0;
+  padding: 10px;
   background-color: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    box-shadow: var(--outline-box-shadow);
+  }
 }
 
 .menu-button__icon {
-  stroke: $menu-button__icon-stroke;
+  stroke: var(--menu-button__icon-stroke);
 }
 
 .menu-button--open {
   @media (max-width: $desktop) {
     .menu-button__icon {
-      stroke: $menu-button__icon-stroke--open;
+      stroke: var(--menu-button__icon-stroke--open);
     }
   }
 }

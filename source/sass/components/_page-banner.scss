@@ -30,6 +30,7 @@
 
   @media (max-width: $desktop) {
     background-image: url("../img/backgrounds/main-page-hero-tablet.jpg");
+    margin-bottom: 70px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backgrounds/main-page-hero-tablet@2x.jpg");
@@ -38,16 +39,36 @@
 
   @media (max-width: $tablet) {
     background-image: url("../img/backgrounds/main-page-hero-mobile.jpg");
+    padding-top: 188px;
+    margin-bottom: 60px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backgrounds/main-page-hero-mobile@2x.jpg");
+    }
+  }
+
+  .title {
+    margin-bottom: 0;
+  }
+
+  .subtitle {
+    margin-top: -7px;
+  }
+
+  .page-banner__content {
+    @media (max-width: $desktop) {
+      margin-right: 17px;
+    }
+
+    @media (max-width: $tablet) {
+      margin-right: 0;
     }
   }
 }
 
 .page-banner--catalog {
   padding-top: 91px;
-  padding-bottom: 95px;
+  padding-bottom: 86px;
   margin-bottom: 80px;
   background-image: url("../img/backgrounds/catalog-hero-desktop.jpg");
 
@@ -57,6 +78,8 @@
 
   @media (max-width: $desktop) {
     background-image: url("../img/backgrounds/catalog-hero-tablet.jpg");
+    margin-bottom: 51px;
+
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backgrounds/catalog-hero-tablet@2x.jpg");
@@ -65,10 +88,25 @@
 
   @media (max-width: $tablet) {
     background-image: url("../img/backgrounds/catalog-hero-mobile.jpg");
+    padding-top: 80px;
+    padding-bottom: 69px;
+    margin-bottom: 40px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backgrounds/catalog-hero-mobile@2x.jpg");
     }
+  }
+
+  .title {
+    font-size: 34px;
+    line-height: 44px;
+    margin-bottom: 0;
+  }
+
+  .subtitle {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 29px;
   }
 }
 

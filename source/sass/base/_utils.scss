@@ -5,6 +5,7 @@
 
   @media (max-width: $desktop) {
     padding: 0 45px;
+    max-width: none;
   }
 
   @media (max-width: $tablet) {
@@ -31,6 +32,12 @@
 
   @media (max-width: $tablet) {
     display: block;
+  }
+}
+
+.hide-on-mobile {
+  @media (max-width: $tablet) {
+    display: none;
   }
 }
 
@@ -69,4 +76,12 @@
 .centered-box {
   align-self: center;
   margin: 0 auto;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
 }

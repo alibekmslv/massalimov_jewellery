@@ -1,9 +1,14 @@
 .logo {
   display: flex;
+
+  &:focus {
+    outline: none;
+    box-shadow: var(--outline-box-shadow);
+  }
 }
 
 .logo__image {
-  fill: $logo__image-fill;
+  fill: var(--logo__image-fill);
 
   @media (max-width: $tablet) {
     width: 52px;

@@ -5,6 +5,19 @@
 
 .pagination--pages {
   justify-content: space-between;
+
+  .pagination__numbers {
+    margin-left: -36px;
+  }
+
+  @media (max-width: $tablet) {
+    justify-content: center;
+
+    .pagination__numbers {
+      margin-left: 0;
+      column-gap: 23px;
+    }
+  }
 }
 
 .pagination .link {
@@ -19,23 +32,9 @@
 }
 
 .pagination__numbers {
-  .link + .link {
-    margin-left: 12px;
-  }
+  display: flex;
+  column-gap: 12px;
 }
-
-// .pagination__link {
-//   font-weight: 500;
-//   line-height: 21px;
-//   color: var(--pagination__link-color);
-//   transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
-//   transition-property: color;
-
-//   &:hover {
-//     color: var(--pagination__link-color-hover);
-//     transition-duration: 0.1s;
-//   }
-// }
 
 .pagination__link--current {
   color: var(--pagination__link--current--color);

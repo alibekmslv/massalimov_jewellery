@@ -1,17 +1,22 @@
 .section-ig-masonry {
-  padding-bottom: 129px;
+  padding-top: 40px;
+  padding-bottom: 130px;
 
   @media (max-width: $desktop) {
     padding-bottom: 80px;
   }
 
-  @media (max-width: $desktop) {
+  @media (max-width: $tablet) {
     padding-bottom: 71px;
   }
 }
 
 .section-ig-masonry__title {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 18px;
+  }
 }
 
 .section-ig-masonry__asperand {
@@ -21,7 +26,7 @@
 }
 
 .section-ig-masonry__gallery-masonry {
-  margin-top: 65px;
+  margin-top: 64px;
 
   @media (max-width: $tablet) {
     margin-top: 50px;
