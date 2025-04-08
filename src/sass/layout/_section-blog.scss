@@ -1,0 +1,27 @@
+@use "../abstracts/viewports";
+
+.section-blog {
+  padding-top: 56px;
+  margin-bottom: 120px;
+
+  @media (max-width: viewports.$desktop) {
+    margin-bottom: 69px;
+  }
+
+  @media (max-width: viewports.$tablet) {
+    padding-top: 46px;
+    margin-bottom: 60px;
+  }
+}
+
+.section-blog__title {
+  margin-bottom: 20px;
+}
+
+.section-blog__blog-masonry {
+  margin-top: 64px;
+
+  @media (max-width: viewports.$tablet) {
+    margin-top: 55px;
+  }
+}

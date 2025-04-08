@@ -1,0 +1,123 @@
+@use "../abstracts/viewports";
+
+.login-form {
+  box-sizing: border-box;
+  background-color: var(--login-form-bgc);
+  width: 430px;
+  position: relative;
+
+  .login-form__title {
+    margin-bottom: 25px;
+  }
+
+  .input-text + .input-text {
+    margin-top: 25px;
+  }
+
+  @media (max-width: viewports.$desktop) {
+    width: 442px;
+  }
+
+  @media (max-width: viewports.$tablet) {
+    width: 270px;
+
+    .close-button__icon {
+      width: 14px;
+      height: 14px;
+    }
+
+    .login-form__title {
+      font-size: 24px;
+      line-height: 31px;
+      margin-bottom: 18px;
+    }
+
+    .input-text + .input-text {
+      margin-top: 20px;
+    }
+  }
+}
+
+.login-form::before {
+  content: "";
+  display: block;
+  height: 138px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  background-image: url("../img/backgrounds/login-popup-desktop.jpg");
+  margin-bottom: 49px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/login-popup-desktop@2x.jpg");
+  }
+
+  @media (max-width: viewports.$desktop) {
+    background-image: url("../img/backgrounds/login-popup-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/login-popup-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: viewports.$tablet) {
+    height: 84px;
+    background-image: url("../img/backgrounds/login-popup-mobile.jpg");
+    margin-bottom: 37px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/login-popup-mobile@2x.jpg");
+    }
+  }
+}
+
+.login-form__form {
+  padding-top: 0;
+  padding-right: 45px;
+  padding-bottom: 53px;
+  padding-left: 45px;
+
+  @media (max-width: viewports.$desktop) {
+    padding-right: 51px;
+    padding-left: 51px;
+  }
+
+  @media (max-width: viewports.$tablet) {
+    padding-right: 15px;
+    padding-bottom: 39px;
+    padding-left: 15px;
+  }
+}
+
+.login-form__submit-button {
+  margin-top: 68px;
+  margin-bottom: 15px;
+
+  @media (max-width: viewports.$tablet) {
+    margin-top: 58px;
+  }
+}
+
+.login-form__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--login-form__text-color);
+}
+
+.login-form__sign-up-link {
+  padding-left: 5px;
+}
+
+.login-form__close-button {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  @media (max-width: viewports.$tablet) {
+    top: 6px;
+    right: 6px;
+  }
+}

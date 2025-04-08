@@ -1,0 +1,953 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <h1 class="visually-hidden">Jewellery's website main page</h1>
+  <div
+    class="page-banner page-banner--front-page text-center"
+    data-color-mode="dark"
+    data-dark-theme="dark_pastel"
+  >
+    <div class="page-banner__content container">
+      <h2 class="title text-upper">Perfection</h2>
+      <p class="subtitle subtitle--italic text-lower">Made to be yours</p>
+    </div>
+  </div>
+  <section class="section-new container">
+    <h2
+      class="title title--second text-capitalize text-center section-new__title"
+    >
+      New in
+    </h2>
+    <div class="splide slider">
+      <div class="splide__arrows slider__controls d-flex flex-justify-between">
+        <button
+          class="button button--invisible slider__button slider__button--prev splide__arrow splide__arrow--prev"
+          type="button"
+          aria-label="Previous Slide"
+        >
+          <svg
+            class="button__icon button__icon--primary"
+            width="30"
+            height="11"
+            aria-hidden="true"
+          >
+            <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button
+          class="button button--invisible slider__button slider__button--next splide__arrow splide__arrow--next"
+          type="button"
+          aria-label="Next Slide"
+        >
+          <svg
+            class="button__icon button__icon--primary"
+            width="30"
+            height="11"
+            aria-hidden="true"
+          >
+            <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+      <a class="link link--primary link--underline text-capitalize" href="#"
+        >Shop Now</a
+      >
+      <div class="splide__track slider__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <a class="product-card" href="#">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-mobile.webp 1x,img/products/purple-gemstone-necklace-newin-mobile@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 1023px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-tablet.webp 1x,img/products/purple-gemstone-necklace-newin-tablet@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcset="img/products/purple-gemstone-necklace-newin-desktop.webp 1x,img/products/purple-gemstone-necklace-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-mobile.jpg 1x, img/products/purple-gemstone-necklace-newin-mobile@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-tablet.jpg 1x, img/products/purple-gemstone-necklace-newin-tablet@2x.jpg 2x"
+                />
+                <img
+                  width="270"
+                  height="284"
+                  src="img/products/purple-gemstone-necklace-newin-desktop.jpg"
+                  srcset="img/products/purple-gemstone-necklace-newin-desktop@2x.jpg 2x"
+                  alt="Picture of necklace with amethyst"
+                />
+              </picture>
+              <h3>Necklace with amethyst</h3>
+              <p>$ 145</p>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="product-card" href="#">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="img/products/layered-choker-necklace-newin-mobile.webp 1x,img/products/layered-choker-necklace-newin-mobile@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 1023px)"
+                  srcset="img/products/layered-choker-necklace-newin-tablet.webp 1x,img/products/layered-choker-necklace-newin-tablet@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcset="img/products/layered-choker-necklace-newin-desktop.webp 1x,img/products/layered-choker-necklace-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="img/products/layered-choker-necklace-newin-mobile.jpg 1x, img/products/layered-choker-necklace-newin-mobile@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="img/products/layered-choker-necklace-newin-tablet.jpg 1x, img/products/layered-choker-necklace-newin-tablet@2x.jpg 2x"
+                />
+                <img
+                  width="270"
+                  height="284"
+                  src="img/products/layered-choker-necklace-newin-desktop.jpg"
+                  srcset="img/products/layered-choker-necklace-newin-desktop@2x.jpg 2x"
+                  alt="Picture of layered сhoker"
+                />
+              </picture>
+              <h3>Layered сhoker</h3>
+              <p>$ 115</p>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="product-card slider__slide slider__slide--show" href="#">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.webp 1x,img/products/dainty-gold-necklace-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 1023px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.webp 1x,img/products/dainty-gold-necklace-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.webp 1x,img/products/dainty-gold-necklace-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.jpg 1x, img/products/dainty-gold-necklace-newin-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.jpg 1x, img/products/dainty-gold-necklace-newin-desktop@2x.jpg 2x"
+                />
+                <img
+                  width="270"
+                  height="284"
+                  src="img/products/dainty-gold-necklace-newin-desktop.jpg"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop@2x.jpg 2x"
+                  alt="Picture of gold chain"
+                />
+              </picture>
+              <h3>Gold chain</h3>
+              <p>$ 215</p>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="product-card" href="#">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.webp 1x,img/products/galaxy-earrings-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 1023px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.webp 1x,img/products/galaxy-earrings-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcset="img/products/galaxy-earrings-newin-desktop.webp 1x,img/products/galaxy-earrings-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.jpg 1x, img/products/galaxy-earrings-newin-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.jpg 1x, img/products/galaxy-earrings-newin-desktop@2x.jpg 2x"
+                />
+                <img
+                  width="270"
+                  height="284"
+                  src="img/products/galaxy-earrings-newin-desktop.jpg"
+                  srcset="img/products/galaxy-earrings-newin-desktop@2x.jpg 2x"
+                  alt="Picture of galaxy earrings"
+                />
+              </picture>
+              <h3>Galaxy earrings</h3>
+              <p>$ 95</p>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="product-card" href="#">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-mobile.webp 1x,img/products/purple-gemstone-necklace-newin-mobile@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 1023px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-tablet.webp 1x,img/products/purple-gemstone-necklace-newin-tablet@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcset="img/products/purple-gemstone-necklace-newin-desktop.webp 1x,img/products/purple-gemstone-necklace-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-mobile.jpg 1x, img/products/purple-gemstone-necklace-newin-mobile@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-tablet.jpg 1x, img/products/purple-gemstone-necklace-newin-tablet@2x.jpg 2x"
+                />
+                <img
+                  width="270"
+                  height="284"
+                  src="img/products/purple-gemstone-necklace-newin-desktop.jpg"
+                  srcset="img/products/purple-gemstone-necklace-newin-desktop@2x.jpg 2x"
+                  alt="Picture of necklace with amethyst"
+                />
+              </picture>
+              <h3>Necklace with amethyst</h3>
+              <p>$ 145</p>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="product-card" href="#">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="img/products/layered-choker-necklace-newin-mobile.webp 1x,img/products/layered-choker-necklace-newin-mobile@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 1023px)"
+                  srcset="img/products/layered-choker-necklace-newin-tablet.webp 1x,img/products/layered-choker-necklace-newin-tablet@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcset="img/products/layered-choker-necklace-newin-desktop.webp 1x,img/products/layered-choker-necklace-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="img/products/layered-choker-necklace-newin-mobile.jpg 1x, img/products/layered-choker-necklace-newin-mobile@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="img/products/layered-choker-necklace-newin-tablet.jpg 1x, img/products/layered-choker-necklace-newin-tablet@2x.jpg 2x"
+                />
+                <img
+                  width="270"
+                  height="284"
+                  src="img/products/layered-choker-necklace-newin-desktop.jpg"
+                  srcset="img/products/layered-choker-necklace-newin-desktop@2x.jpg 2x"
+                  alt="Picture of layered сhoker"
+                />
+              </picture>
+              <h3>Layered сhoker</h3>
+              <p>$ 115</p>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="product-card slider__slide slider__slide--show" href="#">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.webp 1x,img/products/dainty-gold-necklace-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 1023px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.webp 1x,img/products/dainty-gold-necklace-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.webp 1x,img/products/dainty-gold-necklace-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.jpg 1x, img/products/dainty-gold-necklace-newin-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.jpg 1x, img/products/dainty-gold-necklace-newin-desktop@2x.jpg 2x"
+                />
+                <img
+                  width="270"
+                  height="284"
+                  src="img/products/dainty-gold-necklace-newin-desktop.jpg"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop@2x.jpg 2x"
+                  alt="Picture of gold chain"
+                />
+              </picture>
+              <h3>Gold chain</h3>
+              <p>$ 215</p>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="product-card" href="#">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.webp 1x,img/products/galaxy-earrings-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 1023px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.webp 1x,img/products/galaxy-earrings-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcset="img/products/galaxy-earrings-newin-desktop.webp 1x,img/products/galaxy-earrings-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.jpg 1x, img/products/galaxy-earrings-newin-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.jpg 1x, img/products/galaxy-earrings-newin-desktop@2x.jpg 2x"
+                />
+                <img
+                  width="270"
+                  height="284"
+                  src="img/products/galaxy-earrings-newin-desktop.jpg"
+                  srcset="img/products/galaxy-earrings-newin-desktop@2x.jpg 2x"
+                  alt="Picture of galaxy earrings"
+                />
+              </picture>
+              <h3>Galaxy earrings</h3>
+              <p>$ 95</p>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="product-card" href="#">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-mobile.webp 1x,img/products/purple-gemstone-necklace-newin-mobile@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 1023px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-tablet.webp 1x,img/products/purple-gemstone-necklace-newin-tablet@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcset="img/products/purple-gemstone-necklace-newin-desktop.webp 1x,img/products/purple-gemstone-necklace-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-mobile.jpg 1x, img/products/purple-gemstone-necklace-newin-mobile@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="img/products/purple-gemstone-necklace-newin-tablet.jpg 1x, img/products/purple-gemstone-necklace-newin-tablet@2x.jpg 2x"
+                />
+                <img
+                  width="270"
+                  height="284"
+                  src="img/products/purple-gemstone-necklace-newin-desktop.jpg"
+                  srcset="img/products/purple-gemstone-necklace-newin-desktop@2x.jpg 2x"
+                  alt="Picture of necklace with amethyst"
+                />
+              </picture>
+              <h3>Necklace with amethyst</h3>
+              <p>$ 145</p>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="product-card" href="#">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="img/products/layered-choker-necklace-newin-mobile.webp 1x,img/products/layered-choker-necklace-newin-mobile@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 1023px)"
+                  srcset="img/products/layered-choker-necklace-newin-tablet.webp 1x,img/products/layered-choker-necklace-newin-tablet@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcset="img/products/layered-choker-necklace-newin-desktop.webp 1x,img/products/layered-choker-necklace-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="img/products/layered-choker-necklace-newin-mobile.jpg 1x, img/products/layered-choker-necklace-newin-mobile@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="img/products/layered-choker-necklace-newin-tablet.jpg 1x, img/products/layered-choker-necklace-newin-tablet@2x.jpg 2x"
+                />
+                <img
+                  width="270"
+                  height="284"
+                  src="img/products/layered-choker-necklace-newin-desktop.jpg"
+                  srcset="img/products/layered-choker-necklace-newin-desktop@2x.jpg 2x"
+                  alt="Picture of layered сhoker"
+                />
+              </picture>
+              <h3>Layered сhoker</h3>
+              <p>$ 115</p>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="product-card slider__slide slider__slide--show" href="#">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.webp 1x,img/products/dainty-gold-necklace-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 1023px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.webp 1x,img/products/dainty-gold-necklace-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.webp 1x,img/products/dainty-gold-necklace-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.jpg 1x, img/products/dainty-gold-necklace-newin-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop.jpg 1x, img/products/dainty-gold-necklace-newin-desktop@2x.jpg 2x"
+                />
+                <img
+                  width="270"
+                  height="284"
+                  src="img/products/dainty-gold-necklace-newin-desktop.jpg"
+                  srcset="img/products/dainty-gold-necklace-newin-desktop@2x.jpg 2x"
+                  alt="Picture of gold chain"
+                />
+              </picture>
+              <h3>Gold chain</h3>
+              <p>$ 215</p>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="product-card" href="#">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.webp 1x,img/products/galaxy-earrings-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 1023px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.webp 1x,img/products/galaxy-earrings-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcset="img/products/galaxy-earrings-newin-desktop.webp 1x,img/products/galaxy-earrings-newin-desktop@2x.webp 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.jpg 1x, img/products/galaxy-earrings-newin-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="img/products/galaxy-earrings-newin-desktop.jpg 1x, img/products/galaxy-earrings-newin-desktop@2x.jpg 2x"
+                />
+                <img
+                  width="270"
+                  height="284"
+                  src="img/products/galaxy-earrings-newin-desktop.jpg"
+                  srcset="img/products/galaxy-earrings-newin-desktop@2x.jpg 2x"
+                  alt="Picture of galaxy earrings"
+                />
+              </picture>
+              <h3>Galaxy earrings</h3>
+              <p>$ 95</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="section-blog container">
+    <div class="text-center">
+      <h2 class="title title--second section-blog__title">Blog</h2>
+      <a
+        class="link link--primary link--underline text-capitalize text-center"
+        href="#">Read All</a
+      >
+    </div>
+    <ul
+      class="blog-masonry list section-blog__blog-masonry"
+      data-color-mode="light"
+      data-light-theme="light"
+    >
+      <li class="blog-masonry__item">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="img/blog/blog-1-masonry-wide-desktop.webp 1x, img/blog/blog-1-masonry-wide-desktop@2x.webp 2x"
+          />
+          <img
+            loading="lazy"
+            width="570"
+            height="630"
+            src="img/blog/blog-1-masonry-wide-desktop.jpg"
+            srcset="img/blog/blog-1-masonry-wide-desktop@2x.jpg 2x"
+            alt="Jewellery on table"
+          />
+        </picture>
+        <picture>
+          <source
+            type="image/webp"
+            media="(max-width: 767px)"
+            srcset="img/blog/blog-1-mobile.webp 1x, img/blog/blog-1-mobile@2x.webp 2x"
+          />
+          <source
+            type="image/webp"
+            media="(max-width: 1023px)"
+            srcset="img/blog/blog-1-tablet.webp 1x, img/blog/blog-1-tablet@2x.webp 2x"
+          />
+          <source
+            type="image/webp"
+            srcset="img/blog/blog-1-masonry-small-desktop.webp 1x, img/blog/blog-1-masonry-small-desktop@2x.webp 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="img/blog/blog-1-mobile.jpg 1x, img/blog/blog-1-mobile@2x.jpg 2x"
+          />
+          <source
+            media="(max-width: 1023px)"
+            srcset="img/blog/blog-1-tablet.jpg 1x, img/blog/blog-1-tablet@2x.jpg 2x"
+          />
+          <img
+            loading="lazy"
+            width="285"
+            height="300"
+            src="img/blog/blog-1-masonry-small-desktop.jpg"
+            srcset="img/blog/blog-1-masonry-small-desktop@2x.jpg 2x"
+            alt="Jewellery on table"
+          />
+        </picture>
+        <div class="blog-masonry__info">
+          <div class="centered-box text-center">
+            <time datetime="2019-09-30">September 30, 2019</time>
+            <h3>How to care for<br />your jewellery</h3>
+            <a
+              class="link link--primary link--underline text-capitalize"
+              href="#">Read Article</a
+            >
+          </div>
+        </div>
+      </li>
+      <li class="blog-masonry__item">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="img/blog/blog-2-masonry-wide-desktop.webp 1x, img/blog/blog-2-masonry-wide-desktop@2x.webp 2x"
+          />
+          <img
+            loading="lazy"
+            width="570"
+            height="630"
+            src="img/blog/blog-2-masonry-wide-desktop.jpg"
+            srcset="img/blog/blog-2-masonry-wide-desktop@2x.jpg 2x"
+            alt="Jewellery on sun light"
+          />
+        </picture>
+        <picture>
+          <source
+            type="image/webp"
+            media="(max-width: 767px)"
+            srcset="img/blog/blog-2-mobile.webp 1x, img/blog/blog-2-mobile@2x.webp 2x"
+          />
+          <source
+            type="image/webp"
+            media="(max-width: 1023px)"
+            srcset="img/blog/blog-2-tablet.webp 1x, img/blog/blog-2-tablet@2x.webp 2x"
+          />
+          <source
+            type="image/webp"
+            srcset="img/blog/blog-2-masonry-small-desktop.webp 1x, img/blog/blog-2-masonry-small-desktop@2x.webp 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="img/blog/blog-2-mobile.jpg 1x, img/blog/blog-2-mobile@2x.jpg 2x"
+          />
+          <source
+            media="(max-width: 1023px)"
+            srcset="img/blog/blog-2-tablet.jpg 1x, img/blog/blog-2-tablet@2x.jpg 2x"
+          />
+          <img
+            loading="lazy"
+            width="285"
+            height="300"
+            src="img/blog/blog-2-masonry-small-desktop.jpg"
+            srcset="img/blog/blog-2-masonry-small-desktop@2x.jpg 2x"
+            alt="Jewellery on sun light"
+          />
+        </picture>
+        <div class="blog-masonry__info">
+          <div class="centered-box text-center">
+            <time datetime="2019-09-23">September 23, 2019</time>
+            <h3>Power of<br />crystals</h3>
+            <a
+              class="link link--primary link--underline text-capitalize"
+              href="#">Read Article</a
+            >
+          </div>
+        </div>
+      </li>
+      <li class="blog-masonry__item">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="img/blog/blog-3-masonry-wide-desktop.webp 1x, img/blog/blog-3-masonry-wide-desktop@2x.webp 2x"
+          />
+          <img
+            loading="lazy"
+            width="570"
+            height="630"
+            src="img/blog/blog-3-masonry-wide-desktop.jpg"
+            srcset="img/blog/blog-3-masonry-wide-desktop@2x.jpg 2x"
+            alt="Women with jewellery on hand"
+          />
+        </picture>
+        <picture>
+          <source
+            type="image/webp"
+            media="(max-width: 767px)"
+            srcset="img/blog/blog-3-mobile.webp 1x, img/blog/blog-3-mobile@2x.webp 2x"
+          />
+          <source
+            type="image/webp"
+            media="(max-width: 1023px)"
+            srcset="img/blog/blog-3-tablet.webp 1x, img/blog/blog-3-tablet@2x.webp 2x"
+          />
+          <source
+            type="image/webp"
+            srcset="img/blog/blog-3-masonry-small-desktop.webp 1x, img/blog/blog-3-masonry-small-desktop@2x.webp 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="img/blog/blog-3-mobile.jpg 1x, img/blog/blog-3-mobile@2x.jpg 2x"
+          />
+          <source
+            media="(max-width: 1023px)"
+            srcset="img/blog/blog-3-tablet.jpg 1x, img/blog/blog-3-tablet@2x.jpg 2x"
+          />
+          <img
+            loading="lazy"
+            width="285"
+            height="300"
+            src="img/blog/blog-3-masonry-small-desktop.jpg"
+            srcset="img/blog/blog-3-masonry-small-desktop@2x.jpg 2x"
+            alt="Women with jewellery on hand"
+          />
+        </picture>
+        <div class="blog-masonry__info">
+          <div class="centered-box text-center">
+            <time datetime="2019-09-16">September 16, 2019</time>
+            <h3>AW 19 trends</h3>
+            <a
+              class="link link--primary link--underline text-capitalize"
+              href="#">Read Article</a
+            >
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="section-faq container">
+    <h2 class="title title--second text-center section-faq__title">
+      Frequently asked questions
+    </h2>
+    <div class="accordion section-faq__accordion faq-accordion-trigger">
+      <!-- accordion__item--open -->
+      <div class="accordion__item accordion__item--open">
+        <h3>What materials are the&nbsp;jewellery&nbsp;made&nbsp;of?</h3>
+        <p>
+          Our jewellerry is made of solid gold, silver or leather. Also, some
+          jewellery contains precious and semiprecious stones and<br
+            class="show-on-desktop"
+          /> crystals.
+        </p>
+        <button
+          class="accordion__button"
+          aria-label="Dropdown button"
+          type="button"
+        >
+          <svg
+            class="accordion__icon"
+            width="15"
+            height="10"
+            aria-hidden="true"
+          >
+            <use xlink:href="img/sprite_auto.svg#icon-dropdown-arrow"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="accordion__item">
+        <h3>Which countries do&nbsp;you&nbsp;deliver&nbsp;to?</h3>
+        <p>
+          Our jewellerry is made of solid gold, silver or leather. Also, some
+          jewellery contains precious and semiprecious stones and crystals.
+        </p>
+        <button
+          class="accordion__button"
+          aria-label="Dropdown button"
+          type="button"
+        >
+          <svg class="accordion__icon" width="15" height="8" aria-hidden="true">
+            <use xlink:href="img/sprite_auto.svg#icon-dropdown-arrow"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="accordion__item">
+        <h3>What are the payment&nbsp;methods?</h3>
+        <p>
+          Our jewellerry is made of solid gold, silver or leather. Also, some
+          jewellery contains precious and semiprecious stones and crystals.
+        </p>
+        <button
+          class="accordion__button"
+          aria-label="Dropdown button"
+          type="button"
+        >
+          <svg class="accordion__icon" width="15" height="8" aria-hidden="true">
+            <use xlink:href="img/sprite_auto.svg#icon-dropdown-arrow"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="accordion__item">
+        <h3>
+          Can I return the
+          jewellery&nbsp;if&nbsp;it&nbsp;didn’t&nbsp;fit&nbsp;me?
+        </h3>
+        <p>
+          Our jewellerry is made of solid gold, silver or leather. Also, some
+          jewellery contains precious and semiprecious stones and crystals.
+        </p>
+        <button
+          class="accordion__button"
+          aria-label="Dropdown button"
+          type="button"
+        >
+          <svg class="accordion__icon" width="15" height="8" aria-hidden="true">
+            <use xlink:href="img/sprite_auto.svg#icon-dropdown-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="section-ig-masonry">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="title title--second section-ig-masonry__title">
+          <span class="section-ig-masonry__asperand">@</span>Chjewellery
+        </h2>
+        <a class="link link--primary link--underline text-capitalize" href="#"
+          >Follow Us</a
+        >
+      </div>
+      <div class="gallery-masonry section-ig-masonry__gallery-masonry">
+        <picture class="gallery-masonry__img">
+          <source
+            type="image/webp"
+            media="(max-width: 1023px)"
+            srcset="img/inst/inst-8-tablet.webp 1x, img/inst/inst-8-tablet@2x.webp 2x"
+          />
+          <source
+            media="(max-width: 1023px)"
+            srcset="img/inst/inst-8-tablet.jpg 1x, img/inst/inst-8-tablet@2x.jpg 2x"
+          />
+          <source
+            type="image/webp"
+            srcset="img/inst/inst-8-desktop.webp 1x, img/inst/inst-8-desktop@2x.webp 2x"
+          />
+          <img
+            class="gallery-masonry__img"
+            src="img/inst/inst-8-desktop.jpg"
+            width="230"
+            height="230"
+            srcset="img/inst/inst-8-desktop@2x.jpg"
+            alt="Earrings on laptop"
+          />
+        </picture>
+        <picture class="gallery-masonry__img">
+          <source
+            type="image/webp"
+            media="(max-width: 1023px)"
+            srcset="img/inst/inst-2-tablet.webp 1x, img/inst/inst-2-tablet@2x.webp 2x"
+          />
+          <source
+            media="(max-width: 1023px)"
+            srcset="img/inst/inst-2-tablet.jpg 1x, img/inst/inst-2-tablet@2x.jpg 2x"
+          />
+          <source
+            type="image/webp"
+            srcset="img/inst/inst-2-desktop.webp 1x, img/inst/inst-2-desktop@2x.webp 2x"
+          />
+          <img
+            class="gallery-masonry__img"
+            src="img/inst/inst-2-desktop.jpg"
+            width="399"
+            height="412"
+            srcset="img/inst/inst-2-desktop@2x.jpg"
+            alt="Girl with earrings with tree on background"
+          />
+        </picture>
+        <picture class="gallery-masonry__img">
+          <source
+            type="image/webp"
+            media="(max-width: 1023px)"
+            srcset="img/inst/inst-4-tablet.webp 1x, img/inst/inst-4-tablet@2x.webp 2x"
+          />
+          <source
+            media="(max-width: 1023px)"
+            srcset="img/inst/inst-4-tablet.jpg 1x, img/inst/inst-4-tablet@2x.jpg 2x"
+          />
+          <source
+            type="image/webp"
+            srcset="img/inst/inst-4-desktop.webp 1x, img/inst/inst-4-desktop@2x.webp 2x"
+          />
+          <img
+            class="gallery-masonry__img"
+            src="img/inst/inst-4-desktop.jpg"
+            width="230"
+            height="230"
+            srcset="img/inst/inst-4-desktop@2x.jpg"
+            alt="Hand with bracelet and ring"
+          />
+        </picture>
+        <picture class="gallery-masonry__img">
+          <source
+            type="image/webp"
+            media="(max-width: 1023px)"
+            srcset="img/inst/inst-6-tablet.webp 1x, img/inst/inst-6-tablet@2x.webp 2x"
+          />
+          <source
+            media="(max-width: 1023px)"
+            srcset="img/inst/inst-6-tablet.jpg 1x, img/inst/inst-6-tablet@2x.jpg 2x"
+          />
+          <source
+            type="image/webp"
+            srcset="img/inst/inst-6-desktop.webp 1x, img/inst/inst-6-desktop@2x.webp 2x"
+          />
+          <img
+            class="gallery-masonry__img"
+            src="img/inst/inst-6-desktop.jpg"
+            width="230"
+            height="230"
+            srcset="img/inst/inst-6-desktop@2x.jpg"
+            alt="Earrings with diary"
+          />
+        </picture>
+        <picture class="gallery-masonry__img">
+          <source
+            type="image/webp"
+            media="(max-width: 1023px)"
+            srcset="img/inst/inst-1-tablet.webp 1x, img/inst/inst-1-tablet@2x.webp 2x"
+          />
+          <source
+            media="(max-width: 1023px)"
+            srcset="img/inst/inst-1-tablet.jpg 1x, img/inst/inst-1-tablet@2x.jpg 2x"
+          />
+          <source
+            type="image/webp"
+            srcset="img/inst/inst-1-desktop.webp 1x, img/inst/inst-1-desktop@2x.webp 2x"
+          />
+          <img
+            class="gallery-masonry__img"
+            src="img/inst/inst-1-desktop.jpg"
+            width="230"
+            height="150"
+            srcset="img/inst/inst-1-desktop@2x.jpg"
+            alt="Jewellery in box"
+          />
+        </picture>
+        <picture class="gallery-masonry__img">
+          <source
+            type="image/webp"
+            media="(max-width: 1023px)"
+            srcset="img/inst/inst-5-tablet.webp 1x, img/inst/inst-5-tablet@2x.webp 2x"
+          />
+          <source
+            media="(max-width: 1023px)"
+            srcset="img/inst/inst-5-tablet.jpg 1x, img/inst/inst-5-tablet@2x.jpg 2x"
+          />
+          <source
+            type="image/webp"
+            srcset="img/inst/inst-5-desktop.webp 1x, img/inst/inst-5-desktop@2x.webp 2x"
+          />
+          <img
+            class="gallery-masonry__img"
+            src="img/inst/inst-5-desktop.jpg"
+            width="230"
+            height="150"
+            srcset="img/inst/inst-5-desktop@2x.jpg"
+            alt="Jewellery on sunlight"
+          />
+        </picture>
+        <picture class="gallery-masonry__img">
+          <source
+            type="image/webp"
+            media="(max-width: 1023px)"
+            srcset="img/inst/inst-7-tablet.webp 1x, img/inst/inst-7-tablet@2x.webp 2x"
+          />
+          <source
+            media="(max-width: 1023px)"
+            srcset="img/inst/inst-7-tablet.jpg 1x, img/inst/inst-7-tablet@2x.jpg 2x"
+          />
+          <source
+            type="image/webp"
+            srcset="img/inst/inst-7-desktop.webp 1x, img/inst/inst-7-desktop@2x.webp 2x"
+          />
+          <img
+            class="gallery-masonry__img"
+            src="img/inst/inst-7-desktop.jpg"
+            width="230"
+            height="150"
+            srcset="img/inst/inst-7-desktop@2x.jpg"
+            alt="Girl sitting on stairs with rings on hands"
+          />
+        </picture>
+      </div>
+    </div>
+  </section>
+</Layout>

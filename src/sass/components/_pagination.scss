@@ -1,0 +1,43 @@
+@use "../abstracts/viewports";
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination--pages {
+  justify-content: space-between;
+
+  .pagination__numbers {
+    margin-left: -36px;
+  }
+
+  @media (max-width: viewports.$tablet) {
+    justify-content: center;
+
+    .pagination__numbers {
+      margin-left: 0;
+      column-gap: 23px;
+    }
+  }
+}
+
+.pagination .link {
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.pagination button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.pagination__numbers {
+  display: flex;
+  column-gap: 12px;
+}
+
+.pagination__link--current {
+  color: var(--pagination__link--current--color);
+}

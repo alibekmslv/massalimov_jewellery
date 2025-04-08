@@ -1,0 +1,25 @@
+@use "../abstracts/viewports";
+
+.section-new {
+  margin-bottom: 60px;
+
+  @media (max-width: viewports.$desktop) {
+    margin-bottom: 8px;
+  }
+}
+
+.section-new__title {
+  margin-bottom: 0;
+}
+
+.section-new .link--underline {
+  align-self: center;
+
+  @media (max-width: viewports.$desktop) {
+    margin-top: -6px;
+  }
+
+  @media (max-width: viewports.$tablet) {
+    margin-top: 20px;
+  }
+}

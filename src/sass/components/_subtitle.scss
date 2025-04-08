@@ -1,0 +1,31 @@
+@use "../abstracts/viewports";
+
+.subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--subtitle-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  @media (max-width: viewports.$tablet) {
+    line-height: 22px;
+  }
+}
+
+.subtitle--subtle {
+  color: var(--subtitle--subtle-color);
+}
+
+.subtitle--italic {
+  font-family: "Cormorant Garamond", "Times", sans-serif;
+  font-style: italic;
+  font-size: 38px;
+  line-height: 49px;
+  color: var(--subtitle--italic-color);
+
+  @media (max-width: viewports.$tablet) {
+    font-size: 34px;
+    line-height: 44px;
+  }
+}

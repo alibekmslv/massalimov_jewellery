@@ -1,0 +1,53 @@
+---
+
+---
+
+<div class="modal">
+  <div class="login-form centered-box">
+    <h2 class="title title--second text-center login-form__title">Log In</h2>
+    <form action="#" class="login-form__form">
+      <div class="input-text input-text--block">
+        <label class="visually-hidden" for="login-email">E-mail</label>
+        <input
+          type="email"
+          name="login-email"
+          placeholder="Your E-mail"
+          id="login-email"
+          autocomplete="off"
+          required
+        />
+        <span class="input-text__validation input-text__validation--invalid"
+          >Please provide valid email</span
+        >
+      </div>
+      <div class="input-text input-text--block">
+        <label class="visually-hidden" for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          id="password"
+          required
+        />
+        <a class="input-text__additional-text link" href="#"
+          >Forgot your password?</a
+        >
+      </div>
+      <button
+        class="button button--primary button--large button--block login-form__submit-button"
+        type="submit">Login</button
+      >
+      <p class="login-form__text text-center">
+        Don’t have an account?<a
+          class="login-form__sign-up-link link link--primary"
+          href="#">Sign up</a
+        >
+      </p>
+    </form>
+    <button class="login-form__close-button close-button" type="reset">
+      <svg class="close-button__icon" width="20" height="20">
+        <use xlink:href="img/sprite_auto.svg#icon-close-cross"></use>
+      </svg>
+    </button>
+  </div>
+</div>

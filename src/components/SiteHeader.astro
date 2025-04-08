@@ -1,0 +1,108 @@
+---
+
+---
+
+<!-- site-header--open -->
+<header class="site-header">
+  <div class="site-header__wrapper container">
+    <!-- menu-button--open -->
+    <button class="menu-button site-header__menu-button" type="button">
+      <span class="visually-hidden">Open Menu</span>
+      <svg class="menu-button__icon" width="25" height="16" aria-hidden="true">
+        <use
+          class="menu-button__icon-menu"
+          xlink:href="img/sprite_auto.svg#icon-mobile-menu"></use>
+      </svg>
+    </button>
+    <!-- site-header__inner-layout--open -->
+    <div class="site-header__inner-layout">
+      <form
+        class="search-field site-header__search-field"
+        action="#"
+        method="GET"
+      >
+        <label for="search" class="visually-hidden">Search</label>
+        <input
+          id="search"
+          type="search"
+          placeholder="Type here to search"
+          name="search"
+        />
+        <svg
+          class="search-field__icon"
+          width="14"
+          height="14"
+          aria-hidden="true"
+        >
+          <use
+            class="search-field__icon-use"
+            xlink:href="img/sprite_auto.svg#icon-magnifying-glass"></use>
+        </svg>
+      </form>
+      <a class="logo site-header__logo" href="/">
+        <svg class="logo__image" width="66" height="66">
+          <use class="logo__image-use" xlink:href="img/logo.svg#logo"></use>
+        </svg>
+      </a>
+      <hr class="hr-full-width show-on-desktop site-header__hr-full-width" />
+      <nav class="site-navigation site-header__site-navigation">
+        <ul class="site-navigation__list list">
+          <li class="site-navigation__item">
+            <a class="link link--primary" href="/catalog">What's new</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="link link--primary" href="#">Chokers</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="link link--primary" href="#">Necklaces</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="link link--primary" href="#">Rings</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="link link--primary" href="#">Earrings</a>
+          </li>
+        </ul>
+        <ul
+          class="site-navigation__list list site-navigation__list--secondary-menu"
+        >
+          <li class="site-navigation__item">
+            <a class="link" href="#">About CH</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="link" href="#">Stores & Hours</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <a
+          class="site-navigation__login-link link login-popup-trigger"
+          href="/login.html">Login</a
+        >
+      </nav>
+      <ul class="app-control site-header__app-control list">
+        <li class="show-on-desktop">
+          <a
+            class="button button--invisible login-popup-trigger"
+            href="/login.html">Login</a
+          >
+        </li>
+        <li>
+          <a class="button button--invisible app-control__cart-button" href="#">
+            <svg
+              class="app-control__cart-icon"
+              width="20"
+              height="18"
+              aria-hidden="true"
+            >
+              <use xlink:href="img/sprite_auto.svg#icon-shopping-bag"></use>
+            </svg>
+            <span class="show-on-desktop">Cart </span>
+            <span class="cart-count show-on-desktop">0</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

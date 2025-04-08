@@ -1,0 +1,27 @@
+---
+import Modal from "../components/Modal.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import "../sass/style.scss";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Jewellery</title>
+  </head>
+  <body class="page-body no-js">
+    <SiteHeader />
+    <main class="site-main">
+      <slot />
+    </main>
+    <SiteFooter />
+    <Modal />
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/vendor.js"></script>
+  </body>
+</html>

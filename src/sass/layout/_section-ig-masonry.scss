@@ -1,0 +1,36 @@
+@use "../abstracts/viewports";
+
+.section-ig-masonry {
+  padding-top: 40px;
+  padding-bottom: 130px;
+
+  @media (max-width: viewports.$desktop) {
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: viewports.$tablet) {
+    padding-bottom: 71px;
+  }
+}
+
+.section-ig-masonry__title {
+  margin-bottom: 30px;
+
+  @media (max-width: viewports.$desktop) {
+    margin-bottom: 18px;
+  }
+}
+
+.section-ig-masonry__asperand {
+  font-size: 42px;
+  line-height: 55px;
+  color: var(--text-default-color);
+}
+
+.section-ig-masonry__gallery-masonry {
+  margin-top: 64px;
+
+  @media (max-width: viewports.$tablet) {
+    margin-top: 50px;
+  }
+}
