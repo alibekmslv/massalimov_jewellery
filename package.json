@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@splidejs/splide": "^3.6.12",
     "astro": "^5.6.0",
     "sass": "^1.86.2"
   }
